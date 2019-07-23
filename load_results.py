@@ -39,11 +39,12 @@ s = sched.scheduler(time.time, time.sleep)
 
 def load_results():
     print("checking for results")
+    sys.stdout.flush()
     di = DatabaseInterface()
     di.checkWriteResults()
     print("Finished")
-    del di
     sys.stdout.flush()
+    del di
     s.enter(schedule_time, 1, load_results)
 
 if __name__ == "__main__":
