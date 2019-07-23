@@ -2,6 +2,7 @@ import mysql.connector
 import datetime
 from src.Exceptions import *
 from Scraper import *
+import sys
 """
 Rebuilt version of databaseInteractor
 

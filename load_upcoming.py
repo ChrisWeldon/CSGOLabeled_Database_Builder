@@ -2,7 +2,7 @@ from src.Exceptions import PlayerDataUnscrapableException
 from src.Exceptions import MatchDataUnscrapableException
 from src.Exceptions import MatchesListDataUnscrapableException
 from DatabaseInterface import DatabaseInterface
-import datetime, time, sched
+import datetime, time, sched, sys
 from src.Exceptions import *
 from Scraper import *
 """
@@ -51,6 +51,7 @@ def load_upcoming():
 
     print("Finished")
     del di
+    sys.stdout.flush()
     s.enter(schedule_time, 1, load_upcoming)
 
 if __name__ == "__main__":

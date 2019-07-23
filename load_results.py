@@ -43,6 +43,7 @@ def load_results():
     di.checkWriteResults()
     print("Finished")
     del di
+    sys.stdout.flush()
     s.enter(schedule_time, 1, load_results)
 
 if __name__ == "__main__":
