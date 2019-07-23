@@ -5,6 +5,7 @@ from DatabaseInterface import DatabaseInterface
 import datetime, time, sched
 from src.Exceptions import *
 from Scraper import *
+import sys
 """
 
 
