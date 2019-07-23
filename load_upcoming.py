@@ -5,6 +5,7 @@ from DatabaseInterface import DatabaseInterface
 import datetime, time, sched, sys
 from src.Exceptions import *
 from Scraper import *
+from src.Logger import Logger
 """
 
 
@@ -28,28 +29,29 @@ Match type:
 
 """
 
-#print(getMatchData("https://www.hltv.org/matches/2330535/alternate-attax-vs-tricked-united-masters-league"))
+#li.log(getMatchData("https://www.hltv.org/matches/2330535/alternate-attax-vs-tricked-united-masters-league"))
 #
 #cronned for every 5 minutes or so
 #team_lineup = ['695/allu', '4076/Aerial', '7248/xseveN', '9816blah/Aleksib', '11916/sergej']
 
 schedule_time = 10
 s = sched.scheduler(time.time, time.sleep)
+li = Logger()
 
 def load_upcoming():
-    print("checking for upcoming matches")
+    li.log("checking for upcoming matches")
     di = DatabaseInterface()
     up_matches  = getUpcomingMatches(20)
     for m in up_matches:
         match_id = m[0]
         start_time = m[1]
-        print(match_id, " - ", start_time)
+        li.log(match_id, " - ", start_time)
         if(not di.checkUpcomingMatchInDatabase(match_id)):
             di.writeMatch(match_id)
         else:
-            print("already collected " + match_id)
+            li.log("already collected " + match_id)
 
-    print("Finished")
+    li.log("Finished")
     del di
     sys.stdout.flush()
     s.enter(schedule_time, 1, load_upcoming)

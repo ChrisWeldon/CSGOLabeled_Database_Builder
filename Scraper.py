@@ -6,8 +6,10 @@ from src.Exceptions import MatchDataUnscrapableException
 from src.Exceptions import MatchesListDataUnscrapableException
 import time
 from datetime import datetime, timedelta
+from src.Logger import Logger
 
 headers = requests.utils.default_headers()
+li = Logger()
 
 
 def getMatchOver(match_id):

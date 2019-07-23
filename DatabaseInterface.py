@@ -3,6 +3,7 @@ import datetime
 from src.Exceptions import *
 from Scraper import *
 import sys
+from src.Logger import Logger
 """
 Rebuilt version of databaseInteractor
 
@@ -10,11 +11,12 @@ This class is specific to reading the augury database.
 
 
 """
+li = Logger()
 
 class DatabaseInterface:
     def __init__(self):
         self.check_time_hours = 1
-        print("DatabaseInterface Initialized")
+        li.log("DatabaseInterface Initialized")
         self.cnx = mysql.connector.connect(user='chris', password='Chris)98',
                                       host='beybladematch.com',
                                       database='augury')
@@ -46,63 +48,63 @@ class DatabaseInterface:
             purge_base_dataset = "matches_complete"
         cursor = self.cnx.cursor()
         match_query = ("SELECT MTID, t1_GPMID, t2_GPMID from "+purge_base_dataset+" WHERE MTID = " + str(mtid) + ";")
-        print("Getting GPMID's from " + purge_base_dataset)
+        li.log("Getting GPMID's from " + purge_base_dataset)
         cursor.execute(match_query)
         try:
             match = cursor.fetchall()[0]
         except IndexError:
-            print("No Match in `match` with mtid " +str(mtid)+ "")
+            li.log("No Match in `match` with mtid " +str(mtid)+ "")
             return
         t1_GPMID = match[1]
         t2_GPMID = match[2]
         t1_GPMID_query = ("SELECT p1, p2, p3, p4, p5 FROM groups WHERE GPMID = " +str(t1_GPMID)+ ";")
         t2_GPMID_query = ("SELECT p1, p2, p3, p4, p5 FROM groups WHERE GPMID = " +str(t2_GPMID)+ ";")
-        print("Getting PMID's from first group")
+        li.log("Getting PMID's from first group")
         cursor.execute(t1_GPMID_query)
         try:
             t1_group = cursor.fetchall()[0]
         except IndexError:
-            print("No group data left for first group")
-        print("Getting PMID's from second group")
+            li.log("No group data left for first group")
+        li.log("Getting PMID's from second group")
         cursor.execute(t2_GPMID_query)
         try:
             t2_group = cursor.fetchall()[0]
         except IndexError:
-            print("No Group data left for second group")
+            li.log("No Group data left for second group")
             match_remove = ("DELETE FROM "+purge_base_dataset+" WHERE MTID = " + str(mtid)+ ";")
-            print("Deleting match")
+            li.log("Deleting match")
             cursor.execute(match_remove)
             self.cnx.commit()
             cursor.close()
-            print("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete")
+            li.log("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete")
             return
 
         # player_query  = ("SELECT player_id from players WHERE PMID in (%s,%s,%s,%s,%s)  ;") # Delete
         # cursor.execute(player_query, t1_group)
         # cursor.execute(player_query, t2_group)
         player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
-        print("Deleting players from: ", t1_group)
+        li.log("Deleting players from: " + str(t1_group))
         cursor.execute(player_remove, t1_group)
-        print("Deleting players from: ", t2_group)
+        li.log("Deleting players from: "+ str(t2_group))
         cursor.execute(player_remove, t2_group)
         group_remove = ("DELETE FROM groups WHERE GPMID in (%s, %s);")
-        print("Deleting both groups")
+        li.log("Deleting both groups")
         cursor.execute(group_remove, (str(t1_GPMID), str(t2_GPMID)))
         match_remove = ("DELETE FROM "+purge_base_dataset+" WHERE MTID = " + str(mtid)+ ";")
-        print("Deleting match")
+        li.log("Deleting match")
         cursor.execute(match_remove)
         self.cnx.commit()
         cursor.close()
-        print("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete")
+        li.log("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete")
 
     def purgeGroup(self, gpmid):
-        print("Purging group with GPMID ", gpmid)
+        li.log("Purging group with GPMID " + str(gpmid))
         cursor = self.cnx.cursor()
         GPMID_query = ("SELECT p1, p2, p3, p4, p5 FROM groups WHERE GPMID = " +str(gpmid)+ ";")
         cursor.execute(GPMID_query)
         group = cursor.fetchall()[0]
         player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
-        print("Deleting players from: ", group)
+        li.log("Deleting players from: " + str(group))
         cursor.execute(player_remove, group)
         group_remove = ("DELETE FROM groups WHERE GPMID = "+str(gpmid)+";")
         cursor.execute(group_remove)
@@ -110,7 +112,7 @@ class DatabaseInterface:
         cursor.close()
 
     def purgePlayer(self, pmid):
-        print("Purging player pmid ", pmid )
+        li.log("Purging player pmid "+ str(pmid))
         cursor = self.cnx.cursor()
         player_remove = ("DELETE FROM players WHERE PMID = "+str(pmid)+";")
         cursor.execute(player_remove)
@@ -292,36 +294,36 @@ class DatabaseInterface:
                 self.purgeMatch(mtid)
                 pass
             cursor.close()
-            print(status_match," -  ",match_id, " - ", date_start)
+            li.log(str(status_match) + " -  "+ str(match_id)+ " - "+ str(date_start))
 
     def writeMatch(self, match_id):
-        print("\n")
-        print("------------------ ",match_id.split("/")[2]," -----------------")
+        li.log("\n")
+        li.log("------------------ "+ str(match_id.split("/")[2])+" -----------------")
         cursor = self.cnx.cursor()
         try:
             data = getMatchData(match_id)
         except MatchDataUnscrapableException as err:
-            print("Match data unscrabable for : ", match_id)
+            li.log("Match data unscrabable for : "+ str(match_id))
             return
 
         t1_lineup = data['team_1']['players']
         t2_lineup = data['team_2']['players']
         if len(t1_lineup) != 5 or len(t2_lineup) != 5:
-            print("Total Lineup does not equal 10, Not able to write match to database")
+            li.log("Total Lineup does not equal 10, Not able to write match to database")
             cursor.close()
             return
         try:
             t1 = self.writeGroup(data['team_1']['team_id'],t1_lineup)
         except WriteGroupException as err:
-            print(err)
-            print("failed to write team1 data for match ", match_id)
+            li.log(err)
+            li.log("failed to write team1 data for match "+ str(match_id))
             cursor.close()
             return
         try:
             t2 = self.writeGroup(data['team_2']['team_id'],t2_lineup)
         except WriteGroupException as err:
-            print(err)
-            print("failed to write team2 data for match ", match_id)
+            li.log(err)
+            li.log("failed to write team2 data for match "+ str(match_id))
             self.purgeGroup(t1) #Unable to write group data for t2 so purge the stuff that worked
             cursor.close()
             return
@@ -356,11 +358,11 @@ class DatabaseInterface:
             match_type = 7
         mtid_data = (data["match_id"], t1, t2, match_type , datetime.fromtimestamp((int(data["start_datetime"]) / 1e3)), datetime.now())
         try:
-            print("DatabaseInterface: Writing Match Data to Database")
+            li.log("DatabaseInterface: Writing Match Data to Database")
             cursor.execute(add_mtid, mtid_data)
             self.cnx.commit()
         except Exception as err:
-            print(err)
+            li.log(err)
             raise WriteMatchException("Failed to write match data")
         cursor.close()
 
@@ -373,7 +375,7 @@ class DatabaseInterface:
             try:
                 pmids_lineup.append(self.writePlayer(p))
             except WritePlayerException as err:
-                print("WRITE PLAYER EXCEPTION, UNABLE TO TEST THIS CODE, MONITOR TO SEE IF IT WORKS!!")
+                li.log("WRITE PLAYER EXCEPTION, UNABLE TO TEST THIS CODE, MONITOR TO SEE IF IT WORKS!!")
                 while pmids_lineup:
                     self.purgePlayer(pmids_lineup.pop(-1))
                 raise WriteGroupException("WriteGroupException at: " + str(p))
@@ -384,7 +386,7 @@ class DatabaseInterface:
         #     p3 = self.writePlayer(team_lineup[3])
         #     p4 = self.writePlayer(team_lineup[4])
         # except WritePlayerException as err:
-        #     print(err)
+        #     li.log(err)
         #     raise WriteGroupException("Failed to write player")
 
         add_gpmid = ("INSERT INTO groups"
@@ -398,11 +400,11 @@ class DatabaseInterface:
         # gpmid_data = (p0,p1,p2,p3,p4, team_id)
         gpmid_data = (pmids_lineup[0],pmids_lineup[1],pmids_lineup[2],pmids_lineup[3],pmids_lineup[4] , team_id)
         try:
-            print("DatabaseInterface: writing group data to database")
+            li.log("DatabaseInterface: writing group data to database")
             cursor.execute(add_gpmid, gpmid_data)
             self.cnx.commit()
         except Exception as err:
-            print(err)
+            li.log(err)
             raise WriteGroupException("Failed to write group data, likely a database issue and not the code")
 
         id = cursor.lastrowid
@@ -513,13 +515,13 @@ class DatabaseInterface:
                     int(data["1 on 5 Wins"]),
                     datetime.now()
                     )
-        print("DatabaseInterface: writing player data to database")
+        li.log("DatabaseInterface: writing player data to database")
         try:
             cursor.execute(add_pmid, pmid_data)
             self.cnx.commit()
         except MySQLInterfaceError as err:
-            print(err)
-            print("Unable to write player data for ", player_id)
+            li.log(err)
+            li.log("Unable to write player data for "+ str(player_id))
             raise WritePlayerException("Unable to write player data for " + str(player_id))
         id = cursor.lastrowid      #Collects all player data and creates PMID
         return id

@@ -1,8 +1,9 @@
-from src.Exceptions import PlayerDataUnscrapableException
-from src.Exceptions import MatchDataUnscrapableException
-from src.Exceptions import MatchesListDataUnscrapableException
 from src.Exceptions import *
+from src.Logger import Logger
 from Scraper import *
+from DatabaseInterface import DatabaseInterface
+import datetime
+
 """
 
 
@@ -25,9 +26,7 @@ Match type:
     best of 5 (LAN): 7
 
 """
-import Scraper as scraper
-from DatabaseInterface import DatabaseInterface
-import datetime
+li = Logger()
 
 #print(getMatchData("https://www.hltv.org/matches/2330535/alternate-attax-vs-tricked-united-masters-league"))
 #
@@ -35,19 +34,9 @@ import datetime
 #team_lineup = ['695/allu', '4076/Aerial', '7248/xseveN', '9816blah/Aleksib', '11916/sergej']
 
 def main():
-    di = DatabaseInterface()
-    
-    up_matches  = getUpcomingMatches(20)
-    for m in up_matches:
-        match_id = m[0]
-        start_time = m[1]
-        print(match_id, " - ", start_time)
-        if(not di.checkUpcomingMatchInDatabase(match_id)):
-            di.writeMatch(match_id)
-        else:
-            print("already collected " + match_id)
+    raise PlayerDataUnscrapableException("Blah")
 
-    print("Finished")
+    li.log("Finished")
     del di
 
 if __name__ == "__main__":
