@@ -1,16 +1,1048 @@
-[2019-07-23 14:45:21]:  DatabaseInterface Initialized
-[2019-07-23 14:45:22]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 16:00:00
-[2019-07-23 14:45:22]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
-[2019-07-23 14:45:22]:  /matches/2335133/eox-vs-santos-brasil-game-cup-2019 - 2019-07-23 17:00:00
-[2019-07-23 14:45:22]:  /matches/2335133/eox-vs-santos-brasil-game-cup-2019
-[2019-07-23 14:45:22]:  /matches/2335134/red-canids-vs-bulldozer-brasil-game-cup-2019 - 2019-07-23 17:00:00
-[2019-07-23 14:45:22]:  /matches/2335134/red-canids-vs-bulldozer-brasil-game-cup-2019
-[2019-07-23 14:45:22]:  /matches/2335135/keyd-vs-bulldozer-brasil-game-cup-2019 - 2019-07-23 18:00:00
-[2019-07-23 14:45:22]:  /matches/2335135/keyd-vs-bulldozer-brasil-game-cup-2019
-[2019-07-23 14:45:22]:  Finished
-[2019-07-23 14:46:28]:  <class 'src.Exceptions.Error'>
-[2019-07-23 14:46:41]:  Blah
-[2019-07-23 14:49:59]:  typeBlah
-[2019-07-23 14:51:26]:  <class 'type'>Blah
-[2019-07-23 14:51:56]:  <class 'src.Exceptions.PlayerDataUnscrapableException'>Blah
-[2019-07-23 14:52:18]:  PlayerDataUnscrapableException:  Blah
+[2019-07-23 19:04:06]:  checking for upcoming matches
+[2019-07-23 19:04:06]:  DatabaseInterface Initialized
+[2019-07-23 19:04:06]:  Finished
+[2019-07-23 19:49:27]:  checking for upcoming matches
+[2019-07-23 19:49:27]:  DatabaseInterface Initialized
+[2019-07-23 19:51:13]:  checking for upcoming matches
+[2019-07-23 19:51:13]:  DatabaseInterface Initialized
+[2019-07-23 19:51:14]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 19:51:14]:  
+
+[2019-07-23 19:51:14]:  ------------------ 2335136 -----------------
+[2019-07-23 19:51:22]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:27]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:33]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:38]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:44]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:44]:  DatabaseInterface: writing group data to database
+[2019-07-23 19:51:50]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:51:56]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:52:01]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:52:11]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:52:16]:  DatabaseInterface: writing player data to database
+[2019-07-23 19:52:16]:  DatabaseInterface: writing group data to database
+[2019-07-23 19:52:16]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 19:52:16]:  Finished
+[2019-07-23 19:52:26]:  checking for upcoming matches
+[2019-07-23 19:52:26]:  DatabaseInterface Initialized
+[2019-07-23 19:52:27]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 19:52:27]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:52:27]:  Finished
+[2019-07-23 19:52:37]:  checking for upcoming matches
+[2019-07-23 19:52:37]:  DatabaseInterface Initialized
+[2019-07-23 19:52:38]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 19:52:38]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:52:38]:  Finished
+[2019-07-23 19:52:48]:  checking for upcoming matches
+[2019-07-23 19:52:48]:  DatabaseInterface Initialized
+[2019-07-23 19:52:48]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 19:52:48]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:52:48]:  Finished
+[2019-07-23 19:52:58]:  checking for upcoming matches
+[2019-07-23 19:52:58]:  DatabaseInterface Initialized
+[2019-07-23 19:52:59]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 19:52:59]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:52:59]:  Finished
+[2019-07-23 19:53:09]:  checking for upcoming matches
+[2019-07-23 19:53:09]:  DatabaseInterface Initialized
+[2019-07-23 19:57:37]:  checking for upcoming matches
+[2019-07-23 19:57:37]:  DatabaseInterface Initialized
+[2019-07-23 19:57:38]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:57:38]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:57:38]:  Finished
+[2019-07-23 19:57:48]:  checking for upcoming matches
+[2019-07-23 19:57:48]:  DatabaseInterface Initialized
+[2019-07-23 19:57:49]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:57:49]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:57:49]:  Finished
+[2019-07-23 19:57:59]:  checking for upcoming matches
+[2019-07-23 19:57:59]:  DatabaseInterface Initialized
+[2019-07-23 19:57:59]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:57:59]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:57:59]:  Finished
+[2019-07-23 19:58:09]:  checking for upcoming matches
+[2019-07-23 19:58:09]:  DatabaseInterface Initialized
+[2019-07-23 19:58:10]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:58:10]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:58:10]:  Finished
+[2019-07-23 19:58:20]:  checking for upcoming matches
+[2019-07-23 19:58:20]:  DatabaseInterface Initialized
+[2019-07-23 19:58:21]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:58:21]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:58:21]:  Finished
+[2019-07-23 19:58:31]:  checking for upcoming matches
+[2019-07-23 19:58:31]:  DatabaseInterface Initialized
+[2019-07-23 19:58:31]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:58:31]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:58:32]:  Finished
+[2019-07-23 19:58:42]:  checking for upcoming matches
+[2019-07-23 19:58:42]:  DatabaseInterface Initialized
+[2019-07-23 19:58:42]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:58:42]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:58:42]:  Finished
+[2019-07-23 19:58:52]:  checking for upcoming matches
+[2019-07-23 19:58:52]:  DatabaseInterface Initialized
+[2019-07-23 19:58:53]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:58:53]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:58:53]:  Finished
+[2019-07-23 19:59:03]:  checking for upcoming matches
+[2019-07-23 19:59:03]:  DatabaseInterface Initialized
+[2019-07-23 19:59:03]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:03]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:03]:  Finished
+[2019-07-23 19:59:13]:  checking for upcoming matches
+[2019-07-23 19:59:13]:  DatabaseInterface Initialized
+[2019-07-23 19:59:14]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:14]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:14]:  Finished
+[2019-07-23 19:59:24]:  checking for upcoming matches
+[2019-07-23 19:59:24]:  DatabaseInterface Initialized
+[2019-07-23 19:59:25]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:25]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:25]:  Finished
+[2019-07-23 19:59:35]:  checking for upcoming matches
+[2019-07-23 19:59:35]:  DatabaseInterface Initialized
+[2019-07-23 19:59:36]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:36]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:36]:  Finished
+[2019-07-23 19:59:46]:  checking for upcoming matches
+[2019-07-23 19:59:46]:  DatabaseInterface Initialized
+[2019-07-23 19:59:46]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:46]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:46]:  Finished
+[2019-07-23 19:59:56]:  checking for upcoming matches
+[2019-07-23 19:59:56]:  DatabaseInterface Initialized
+[2019-07-23 19:59:57]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 19:59:57]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 19:59:57]:  Finished
+[2019-07-23 20:00:07]:  checking for upcoming matches
+[2019-07-23 20:00:07]:  DatabaseInterface Initialized
+[2019-07-23 20:00:08]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:00:08]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:00:08]:  Finished
+[2019-07-23 20:00:18]:  checking for upcoming matches
+[2019-07-23 20:00:18]:  DatabaseInterface Initialized
+[2019-07-23 20:00:18]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:00:18]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:00:18]:  Finished
+[2019-07-23 20:00:28]:  checking for upcoming matches
+[2019-07-23 20:00:28]:  DatabaseInterface Initialized
+[2019-07-23 20:00:29]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:00:29]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:00:29]:  Finished
+[2019-07-23 20:00:39]:  checking for upcoming matches
+[2019-07-23 20:00:39]:  DatabaseInterface Initialized
+[2019-07-23 20:00:40]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:00:40]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:00:40]:  Finished
+[2019-07-23 20:00:50]:  checking for upcoming matches
+[2019-07-23 20:00:50]:  DatabaseInterface Initialized
+[2019-07-23 20:00:50]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:00:50]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:00:50]:  Finished
+[2019-07-23 20:01:00]:  checking for upcoming matches
+[2019-07-23 20:01:00]:  DatabaseInterface Initialized
+[2019-07-23 20:01:01]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:01]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:01]:  Finished
+[2019-07-23 20:01:11]:  checking for upcoming matches
+[2019-07-23 20:01:11]:  DatabaseInterface Initialized
+[2019-07-23 20:01:12]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:12]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:12]:  Finished
+[2019-07-23 20:01:22]:  checking for upcoming matches
+[2019-07-23 20:01:22]:  DatabaseInterface Initialized
+[2019-07-23 20:01:22]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:23]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:23]:  Finished
+[2019-07-23 20:01:33]:  checking for upcoming matches
+[2019-07-23 20:01:33]:  DatabaseInterface Initialized
+[2019-07-23 20:01:33]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:33]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:33]:  Finished
+[2019-07-23 20:01:43]:  checking for upcoming matches
+[2019-07-23 20:01:43]:  DatabaseInterface Initialized
+[2019-07-23 20:01:44]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:44]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:44]:  Finished
+[2019-07-23 20:01:54]:  checking for upcoming matches
+[2019-07-23 20:01:54]:  DatabaseInterface Initialized
+[2019-07-23 20:01:55]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:01:55]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:01:55]:  Finished
+[2019-07-23 20:02:05]:  checking for upcoming matches
+[2019-07-23 20:02:05]:  DatabaseInterface Initialized
+[2019-07-23 20:02:05]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:02:05]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:02:05]:  Finished
+[2019-07-23 20:02:15]:  checking for upcoming matches
+[2019-07-23 20:02:15]:  DatabaseInterface Initialized
+[2019-07-23 20:02:16]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:02:16]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:02:16]:  Finished
+[2019-07-23 20:02:26]:  checking for upcoming matches
+[2019-07-23 20:02:26]:  DatabaseInterface Initialized
+[2019-07-23 20:02:27]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:02:27]:  already collected /matches/2335136/detona-vs-isurus-brasil-game-cup-2019
+[2019-07-23 20:02:27]:  Finished
+[2019-07-23 20:02:34]:  DatabaseInterface Initialized
+[2019-07-23 20:02:35]:  Getting GPMID's from matches
+[2019-07-23 20:02:35]:  Getting PMID's from first group
+[2019-07-23 20:02:35]:  Getting PMID's from second group
+[2019-07-23 20:02:35]:  Deleting players from: (691, 692, 693, 694, 695)
+[2019-07-23 20:02:35]:  Deleting players from: (696, 697, 698, 699, 700)
+[2019-07-23 20:02:35]:  Deleting both groups
+[2019-07-23 20:02:35]:  Deleting match
+[2019-07-23 20:02:35]:  MTID on matches for 62 complete
+[2019-07-23 20:02:35]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:00:00
+[2019-07-23 20:02:37]:  checking for upcoming matches
+[2019-07-23 20:02:37]:  DatabaseInterface Initialized
+[2019-07-23 20:02:37]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:02:37]:  
+
+[2019-07-23 20:02:37]:  ------------------ 2335136 -----------------
+[2019-07-23 20:02:45]:  DatabaseInterface Initialized
+[2019-07-23 20:02:45]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:02:50]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:02:55]:  DatabaseInterface Initialized
+[2019-07-23 20:02:55]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:00]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:05]:  DatabaseInterface Initialized
+[2019-07-23 20:03:06]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:06]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:03:12]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:15]:  DatabaseInterface Initialized
+[2019-07-23 20:03:18]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:23]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:25]:  DatabaseInterface Initialized
+[2019-07-23 20:03:29]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:34]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:34]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:03:34]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:03:34]:  Finished
+[2019-07-23 20:03:35]:  DatabaseInterface Initialized
+[2019-07-23 20:03:35]:  Getting GPMID's from matches
+[2019-07-23 20:03:35]:  Getting PMID's from first group
+[2019-07-23 20:03:35]:  Getting PMID's from second group
+[2019-07-23 20:03:35]:  Deleting players from: (701, 702, 703, 704, 705)
+[2019-07-23 20:03:35]:  Deleting players from: (706, 707, 708, 709, 710)
+[2019-07-23 20:03:35]:  Deleting both groups
+[2019-07-23 20:03:35]:  Deleting match
+[2019-07-23 20:03:35]:  MTID on matches for 63 complete
+[2019-07-23 20:03:35]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:03:44]:  checking for upcoming matches
+[2019-07-23 20:03:44]:  DatabaseInterface Initialized
+[2019-07-23 20:03:45]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:03:45]:  
+
+[2019-07-23 20:03:45]:  ------------------ 2335136 -----------------
+[2019-07-23 20:03:45]:  DatabaseInterface Initialized
+[2019-07-23 20:03:52]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:03:55]:  DatabaseInterface Initialized
+[2019-07-23 20:03:56]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:02]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:06]:  DatabaseInterface Initialized
+[2019-07-23 20:04:08]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:13]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:13]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:04:16]:  DatabaseInterface Initialized
+[2019-07-23 20:04:19]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:24]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:26]:  DatabaseInterface Initialized
+[2019-07-23 20:04:29]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:34]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:36]:  DatabaseInterface Initialized
+[2019-07-23 20:04:39]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:39]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:04:39]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:04:39]:  Finished
+[2019-07-23 20:04:46]:  DatabaseInterface Initialized
+[2019-07-23 20:04:46]:  Getting GPMID's from matches
+[2019-07-23 20:04:46]:  Getting PMID's from first group
+[2019-07-23 20:04:46]:  Getting PMID's from second group
+[2019-07-23 20:04:46]:  Deleting players from: (711, 712, 713, 714, 715)
+[2019-07-23 20:04:46]:  Deleting players from: (716, 717, 718, 719, 720)
+[2019-07-23 20:04:46]:  Deleting both groups
+[2019-07-23 20:04:46]:  Deleting match
+[2019-07-23 20:04:46]:  MTID on matches for 64 complete
+[2019-07-23 20:04:46]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:04:49]:  checking for upcoming matches
+[2019-07-23 20:04:49]:  DatabaseInterface Initialized
+[2019-07-23 20:04:50]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:04:50]:  
+
+[2019-07-23 20:04:50]:  ------------------ 2335136 -----------------
+[2019-07-23 20:04:56]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:04:56]:  DatabaseInterface Initialized
+[2019-07-23 20:05:01]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:06]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:06]:  DatabaseInterface Initialized
+[2019-07-23 20:05:12]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:16]:  DatabaseInterface Initialized
+[2019-07-23 20:05:17]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:17]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:05:23]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:26]:  DatabaseInterface Initialized
+[2019-07-23 20:05:28]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:33]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:36]:  DatabaseInterface Initialized
+[2019-07-23 20:05:38]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:43]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:05:43]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:05:43]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:05:43]:  Finished
+[2019-07-23 20:05:46]:  DatabaseInterface Initialized
+[2019-07-23 20:05:47]:  Getting GPMID's from matches
+[2019-07-23 20:05:47]:  Getting PMID's from first group
+[2019-07-23 20:05:47]:  Getting PMID's from second group
+[2019-07-23 20:05:47]:  Deleting players from: (721, 722, 723, 724, 725)
+[2019-07-23 20:05:47]:  Deleting players from: (726, 727, 728, 729, 730)
+[2019-07-23 20:05:47]:  Deleting both groups
+[2019-07-23 20:05:47]:  Deleting match
+[2019-07-23 20:05:47]:  MTID on matches for 65 complete
+[2019-07-23 20:05:47]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:05:53]:  checking for upcoming matches
+[2019-07-23 20:05:53]:  DatabaseInterface Initialized
+[2019-07-23 20:05:53]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:05:53]:  
+
+[2019-07-23 20:05:53]:  ------------------ 2335136 -----------------
+[2019-07-23 20:05:57]:  DatabaseInterface Initialized
+[2019-07-23 20:06:03]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:07]:  DatabaseInterface Initialized
+[2019-07-23 20:06:07]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:13]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:17]:  DatabaseInterface Initialized
+[2019-07-23 20:06:18]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:23]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:23]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:06:27]:  DatabaseInterface Initialized
+[2019-07-23 20:06:28]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:34]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:37]:  DatabaseInterface Initialized
+[2019-07-23 20:06:38]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:43]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:47]:  DatabaseInterface Initialized
+[2019-07-23 20:06:48]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:06:48]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:06:48]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:06:48]:  Finished
+[2019-07-23 20:06:57]:  DatabaseInterface Initialized
+[2019-07-23 20:06:58]:  Getting GPMID's from matches
+[2019-07-23 20:06:58]:  Getting PMID's from first group
+[2019-07-23 20:06:58]:  Getting PMID's from second group
+[2019-07-23 20:06:58]:  Deleting players from: (731, 732, 733, 734, 735)
+[2019-07-23 20:06:58]:  Deleting players from: (736, 737, 738, 739, 740)
+[2019-07-23 20:06:58]:  Deleting both groups
+[2019-07-23 20:06:58]:  Deleting match
+[2019-07-23 20:06:58]:  MTID on matches for 66 complete
+[2019-07-23 20:06:58]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:06:58]:  checking for upcoming matches
+[2019-07-23 20:06:58]:  DatabaseInterface Initialized
+[2019-07-23 20:06:59]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:06:59]:  
+
+[2019-07-23 20:06:59]:  ------------------ 2335136 -----------------
+[2019-07-23 20:07:06]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:08]:  DatabaseInterface Initialized
+[2019-07-23 20:07:12]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:16]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:18]:  DatabaseInterface Initialized
+[2019-07-23 20:07:22]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:27]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:27]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:07:28]:  DatabaseInterface Initialized
+[2019-07-23 20:07:33]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:38]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:38]:  DatabaseInterface Initialized
+[2019-07-23 20:07:42]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:48]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:48]:  DatabaseInterface Initialized
+[2019-07-23 20:07:52]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:07:52]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:07:52]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:07:52]:  Finished
+[2019-07-23 20:07:58]:  DatabaseInterface Initialized
+[2019-07-23 20:07:59]:  Getting GPMID's from matches
+[2019-07-23 20:07:59]:  Getting PMID's from first group
+[2019-07-23 20:07:59]:  Getting PMID's from second group
+[2019-07-23 20:07:59]:  Deleting players from: (741, 742, 743, 744, 745)
+[2019-07-23 20:07:59]:  Deleting players from: (746, 747, 748, 749, 750)
+[2019-07-23 20:07:59]:  Deleting both groups
+[2019-07-23 20:07:59]:  Deleting match
+[2019-07-23 20:07:59]:  MTID on matches for 67 complete
+[2019-07-23 20:07:59]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:08:03]:  checking for upcoming matches
+[2019-07-23 20:08:03]:  DatabaseInterface Initialized
+[2019-07-23 20:08:03]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:08:03]:  
+
+[2019-07-23 20:08:03]:  ------------------ 2335136 -----------------
+[2019-07-23 20:08:09]:  DatabaseInterface Initialized
+[2019-07-23 20:08:10]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:15]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:19]:  DatabaseInterface Initialized
+[2019-07-23 20:08:21]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:27]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:29]:  DatabaseInterface Initialized
+[2019-07-23 20:08:32]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:32]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:08:38]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:39]:  DatabaseInterface Initialized
+[2019-07-23 20:08:43]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:48]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:49]:  DatabaseInterface Initialized
+[2019-07-23 20:08:53]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:58]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:08:58]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:08:58]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:08:58]:  Finished
+[2019-07-23 20:08:59]:  DatabaseInterface Initialized
+[2019-07-23 20:09:00]:  Getting GPMID's from matches
+[2019-07-23 20:09:00]:  Getting PMID's from first group
+[2019-07-23 20:09:00]:  Getting PMID's from second group
+[2019-07-23 20:09:00]:  Deleting players from: (751, 752, 753, 754, 755)
+[2019-07-23 20:09:00]:  Deleting players from: (756, 757, 758, 759, 760)
+[2019-07-23 20:09:00]:  Deleting both groups
+[2019-07-23 20:09:00]:  Deleting match
+[2019-07-23 20:09:00]:  MTID on matches for 68 complete
+[2019-07-23 20:09:00]:  NL -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:09:08]:  checking for upcoming matches
+[2019-07-23 20:09:08]:  DatabaseInterface Initialized
+[2019-07-23 20:09:08]:  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:09:08]:  
+
+[2019-07-23 20:09:08]:  ------------------ 2335136 -----------------
+[2019-07-23 20:09:10]:  DatabaseInterface Initialized
+[2019-07-23 20:09:15]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:20]:  DatabaseInterface Initialized
+[2019-07-23 20:09:20]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:26]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:30]:  DatabaseInterface Initialized
+[2019-07-23 20:09:31]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:36]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:36]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:09:40]:  DatabaseInterface Initialized
+[2019-07-23 20:09:42]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:47]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:50]:  DatabaseInterface Initialized
+[2019-07-23 20:09:52]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:09:57]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:10:00]:  DatabaseInterface Initialized
+[2019-07-23 20:10:02]:  DatabaseInterface: writing player data to database
+[2019-07-23 20:10:02]:  DatabaseInterface: writing group data to database
+[2019-07-23 20:10:02]:  DatabaseInterface: Writing Match Data to Database
+[2019-07-23 20:10:02]:  Finished
+[2019-07-23 20:10:10]:  DatabaseInterface Initialized
+[2019-07-23 20:10:11]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:10:12]:  checking for upcoming matches
+[2019-07-23 20:10:12]:  DatabaseInterface Initialized
+[2019-07-23 20:10:13]:  Finished
+[2019-07-23 20:10:21]:  DatabaseInterface Initialized
+[2019-07-23 20:10:22]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:10:23]:  checking for upcoming matches
+[2019-07-23 20:10:23]:  DatabaseInterface Initialized
+[2019-07-23 20:10:24]:  Finished
+[2019-07-23 20:10:32]:  DatabaseInterface Initialized
+[2019-07-23 20:10:32]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:10:34]:  checking for upcoming matches
+[2019-07-23 20:10:34]:  DatabaseInterface Initialized
+[2019-07-23 20:10:35]:  Finished
+[2019-07-23 20:10:42]:  DatabaseInterface Initialized
+[2019-07-23 20:10:43]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:10:45]:  checking for upcoming matches
+[2019-07-23 20:10:45]:  DatabaseInterface Initialized
+[2019-07-23 20:10:45]:  Finished
+[2019-07-23 20:10:53]:  DatabaseInterface Initialized
+[2019-07-23 20:10:54]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:10:55]:  checking for upcoming matches
+[2019-07-23 20:10:55]:  DatabaseInterface Initialized
+[2019-07-23 20:10:56]:  Finished
+[2019-07-23 20:11:04]:  DatabaseInterface Initialized
+[2019-07-23 20:11:05]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:06]:  checking for upcoming matches
+[2019-07-23 20:11:06]:  DatabaseInterface Initialized
+[2019-07-23 20:11:07]:  Finished
+[2019-07-23 20:11:15]:  DatabaseInterface Initialized
+[2019-07-23 20:11:15]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:17]:  checking for upcoming matches
+[2019-07-23 20:11:17]:  DatabaseInterface Initialized
+[2019-07-23 20:11:17]:  Finished
+[2019-07-23 20:11:25]:  DatabaseInterface Initialized
+[2019-07-23 20:11:26]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:27]:  checking for upcoming matches
+[2019-07-23 20:11:27]:  DatabaseInterface Initialized
+[2019-07-23 20:11:28]:  Finished
+[2019-07-23 20:11:36]:  DatabaseInterface Initialized
+[2019-07-23 20:11:37]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:38]:  checking for upcoming matches
+[2019-07-23 20:11:38]:  DatabaseInterface Initialized
+[2019-07-23 20:11:39]:  Finished
+[2019-07-23 20:11:47]:  DatabaseInterface Initialized
+[2019-07-23 20:11:48]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:49]:  checking for upcoming matches
+[2019-07-23 20:11:49]:  DatabaseInterface Initialized
+[2019-07-23 20:11:49]:  Finished
+[2019-07-23 20:11:58]:  DatabaseInterface Initialized
+[2019-07-23 20:11:58]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:11:59]:  checking for upcoming matches
+[2019-07-23 20:11:59]:  DatabaseInterface Initialized
+[2019-07-23 20:12:00]:  Finished
+[2019-07-23 20:12:08]:  DatabaseInterface Initialized
+[2019-07-23 20:12:09]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:12:10]:  checking for upcoming matches
+[2019-07-23 20:12:10]:  DatabaseInterface Initialized
+[2019-07-23 20:12:11]:  Finished
+[2019-07-23 20:12:19]:  DatabaseInterface Initialized
+[2019-07-23 20:12:20]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:12:21]:  checking for upcoming matches
+[2019-07-23 20:12:21]:  DatabaseInterface Initialized
+[2019-07-23 20:12:22]:  Finished
+[2019-07-23 20:12:30]:  DatabaseInterface Initialized
+[2019-07-23 20:12:31]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:12:32]:  checking for upcoming matches
+[2019-07-23 20:12:32]:  DatabaseInterface Initialized
+[2019-07-23 20:12:32]:  Finished
+[2019-07-23 20:12:41]:  DatabaseInterface Initialized
+[2019-07-23 20:12:42]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:12:42]:  checking for upcoming matches
+[2019-07-23 20:12:42]:  DatabaseInterface Initialized
+[2019-07-23 20:12:43]:  Finished
+[2019-07-23 20:12:52]:  DatabaseInterface Initialized
+[2019-07-23 20:12:52]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:12:53]:  checking for upcoming matches
+[2019-07-23 20:12:53]:  DatabaseInterface Initialized
+[2019-07-23 20:12:54]:  Finished
+[2019-07-23 20:13:02]:  DatabaseInterface Initialized
+[2019-07-23 20:13:03]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:04]:  checking for upcoming matches
+[2019-07-23 20:13:04]:  DatabaseInterface Initialized
+[2019-07-23 20:13:05]:  Finished
+[2019-07-23 20:13:13]:  DatabaseInterface Initialized
+[2019-07-23 20:13:14]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:15]:  checking for upcoming matches
+[2019-07-23 20:13:15]:  DatabaseInterface Initialized
+[2019-07-23 20:13:15]:  Finished
+[2019-07-23 20:13:24]:  DatabaseInterface Initialized
+[2019-07-23 20:13:25]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:25]:  checking for upcoming matches
+[2019-07-23 20:13:25]:  DatabaseInterface Initialized
+[2019-07-23 20:13:26]:  Finished
+[2019-07-23 20:13:35]:  DatabaseInterface Initialized
+[2019-07-23 20:13:36]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:36]:  checking for upcoming matches
+[2019-07-23 20:13:36]:  DatabaseInterface Initialized
+[2019-07-23 20:13:37]:  Finished
+[2019-07-23 20:13:46]:  DatabaseInterface Initialized
+[2019-07-23 20:13:47]:  checking for upcoming matches
+[2019-07-23 20:13:47]:  DatabaseInterface Initialized
+[2019-07-23 20:13:47]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:47]:  Finished
+[2019-07-23 20:13:57]:  DatabaseInterface Initialized
+[2019-07-23 20:13:57]:  checking for upcoming matches
+[2019-07-23 20:13:57]:  DatabaseInterface Initialized
+[2019-07-23 20:13:57]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:13:58]:  Finished
+[2019-07-23 20:14:07]:  DatabaseInterface Initialized
+[2019-07-23 20:14:08]:  checking for upcoming matches
+[2019-07-23 20:14:08]:  DatabaseInterface Initialized
+[2019-07-23 20:14:08]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:14:09]:  Finished
+[2019-07-23 20:14:18]:  DatabaseInterface Initialized
+[2019-07-23 20:14:19]:  checking for upcoming matches
+[2019-07-23 20:14:19]:  DatabaseInterface Initialized
+[2019-07-23 20:14:19]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:14:20]:  Finished
+[2019-07-23 20:14:29]:  DatabaseInterface Initialized
+[2019-07-23 20:14:30]:  checking for upcoming matches
+[2019-07-23 20:14:30]:  DatabaseInterface Initialized
+[2019-07-23 20:14:30]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:14:30]:  Finished
+[2019-07-23 20:14:40]:  DatabaseInterface Initialized
+[2019-07-23 20:14:40]:  checking for upcoming matches
+[2019-07-23 20:14:40]:  DatabaseInterface Initialized
+[2019-07-23 20:14:41]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:14:41]:  Finished
+[2019-07-23 20:14:51]:  DatabaseInterface Initialized
+[2019-07-23 20:14:51]:  checking for upcoming matches
+[2019-07-23 20:14:51]:  DatabaseInterface Initialized
+[2019-07-23 20:14:52]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:14:52]:  Finished
+[2019-07-23 20:15:02]:  DatabaseInterface Initialized
+[2019-07-23 20:15:02]:  checking for upcoming matches
+[2019-07-23 20:15:02]:  DatabaseInterface Initialized
+[2019-07-23 20:15:02]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:15:03]:  Finished
+[2019-07-23 20:15:13]:  DatabaseInterface Initialized
+[2019-07-23 20:15:13]:  checking for upcoming matches
+[2019-07-23 20:15:13]:  DatabaseInterface Initialized
+[2019-07-23 20:15:13]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:15:14]:  Finished
+[2019-07-23 20:15:23]:  DatabaseInterface Initialized
+[2019-07-23 20:15:24]:  checking for upcoming matches
+[2019-07-23 20:15:24]:  DatabaseInterface Initialized
+[2019-07-23 20:15:24]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:15:24]:  Finished
+[2019-07-23 20:15:34]:  DatabaseInterface Initialized
+[2019-07-23 20:15:34]:  checking for upcoming matches
+[2019-07-23 20:15:34]:  DatabaseInterface Initialized
+[2019-07-23 20:15:35]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:15:35]:  Finished
+[2019-07-23 20:15:45]:  DatabaseInterface Initialized
+[2019-07-23 20:15:45]:  checking for upcoming matches
+[2019-07-23 20:15:45]:  DatabaseInterface Initialized
+[2019-07-23 20:15:46]:  Finished
+[2019-07-23 20:15:46]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:15:56]:  checking for upcoming matches
+[2019-07-23 20:15:56]:  DatabaseInterface Initialized
+[2019-07-23 20:15:56]:  DatabaseInterface Initialized
+[2019-07-23 20:15:56]:  Finished
+[2019-07-23 20:15:57]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:07]:  checking for upcoming matches
+[2019-07-23 20:16:07]:  DatabaseInterface Initialized
+[2019-07-23 20:16:07]:  DatabaseInterface Initialized
+[2019-07-23 20:16:07]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:08]:  Finished
+[2019-07-23 20:16:17]:  DatabaseInterface Initialized
+[2019-07-23 20:16:18]:  checking for upcoming matches
+[2019-07-23 20:16:18]:  DatabaseInterface Initialized
+[2019-07-23 20:16:18]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:18]:  Finished
+[2019-07-23 20:16:28]:  DatabaseInterface Initialized
+[2019-07-23 20:16:28]:  checking for upcoming matches
+[2019-07-23 20:16:28]:  DatabaseInterface Initialized
+[2019-07-23 20:16:29]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:29]:  Finished
+[2019-07-23 20:16:39]:  checking for upcoming matches
+[2019-07-23 20:16:39]:  DatabaseInterface Initialized
+[2019-07-23 20:16:39]:  DatabaseInterface Initialized
+[2019-07-23 20:16:40]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:41]:  Finished
+[2019-07-23 20:16:50]:  DatabaseInterface Initialized
+[2019-07-23 20:16:51]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:16:51]:  checking for upcoming matches
+[2019-07-23 20:16:51]:  DatabaseInterface Initialized
+[2019-07-23 20:16:51]:  Finished
+[2019-07-23 20:17:01]:  DatabaseInterface Initialized
+[2019-07-23 20:17:01]:  checking for upcoming matches
+[2019-07-23 20:17:01]:  DatabaseInterface Initialized
+[2019-07-23 20:17:01]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:17:02]:  Finished
+[2019-07-23 20:17:11]:  DatabaseInterface Initialized
+[2019-07-23 20:17:12]:  checking for upcoming matches
+[2019-07-23 20:17:12]:  DatabaseInterface Initialized
+[2019-07-23 20:17:12]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:17:13]:  Finished
+[2019-07-23 20:17:22]:  DatabaseInterface Initialized
+[2019-07-23 20:17:23]:  checking for upcoming matches
+[2019-07-23 20:17:23]:  DatabaseInterface Initialized
+[2019-07-23 20:17:23]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:17:23]:  Finished
+[2019-07-23 20:17:33]:  DatabaseInterface Initialized
+[2019-07-23 20:17:33]:  checking for upcoming matches
+[2019-07-23 20:17:33]:  DatabaseInterface Initialized
+[2019-07-23 20:17:34]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:17:34]:  Finished
+[2019-07-23 20:17:44]:  DatabaseInterface Initialized
+[2019-07-23 20:17:44]:  checking for upcoming matches
+[2019-07-23 20:17:44]:  DatabaseInterface Initialized
+[2019-07-23 20:17:45]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:17:45]:  Finished
+[2019-07-23 20:17:55]:  DatabaseInterface Initialized
+[2019-07-23 20:17:55]:  checking for upcoming matches
+[2019-07-23 20:17:55]:  DatabaseInterface Initialized
+[2019-07-23 20:17:55]:  Finished
+[2019-07-23 20:17:56]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:05]:  checking for upcoming matches
+[2019-07-23 20:18:05]:  DatabaseInterface Initialized
+[2019-07-23 20:18:06]:  DatabaseInterface Initialized
+[2019-07-23 20:18:06]:  Finished
+[2019-07-23 20:18:06]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:16]:  checking for upcoming matches
+[2019-07-23 20:18:16]:  DatabaseInterface Initialized
+[2019-07-23 20:18:16]:  DatabaseInterface Initialized
+[2019-07-23 20:18:17]:  Finished
+[2019-07-23 20:18:17]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:27]:  checking for upcoming matches
+[2019-07-23 20:18:27]:  DatabaseInterface Initialized
+[2019-07-23 20:18:27]:  DatabaseInterface Initialized
+[2019-07-23 20:18:27]:  Finished
+[2019-07-23 20:18:28]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:37]:  checking for upcoming matches
+[2019-07-23 20:18:37]:  DatabaseInterface Initialized
+[2019-07-23 20:18:38]:  DatabaseInterface Initialized
+[2019-07-23 20:18:38]:  Finished
+[2019-07-23 20:18:39]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:48]:  checking for upcoming matches
+[2019-07-23 20:18:48]:  DatabaseInterface Initialized
+[2019-07-23 20:18:49]:  DatabaseInterface Initialized
+[2019-07-23 20:18:49]:  Finished
+[2019-07-23 20:18:50]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:18:59]:  checking for upcoming matches
+[2019-07-23 20:18:59]:  DatabaseInterface Initialized
+[2019-07-23 20:19:00]:  Finished
+[2019-07-23 20:19:00]:  DatabaseInterface Initialized
+[2019-07-23 20:19:00]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:19:10]:  checking for upcoming matches
+[2019-07-23 20:19:10]:  DatabaseInterface Initialized
+[2019-07-23 20:19:10]:  Finished
+[2019-07-23 20:19:10]:  DatabaseInterface Initialized
+[2019-07-23 20:19:11]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:19:20]:  checking for upcoming matches
+[2019-07-23 20:19:20]:  DatabaseInterface Initialized
+[2019-07-23 20:19:21]:  Finished
+[2019-07-23 20:19:21]:  DatabaseInterface Initialized
+[2019-07-23 20:19:22]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:19:31]:  checking for upcoming matches
+[2019-07-23 20:19:31]:  DatabaseInterface Initialized
+[2019-07-23 20:19:32]:  Finished
+[2019-07-23 20:19:32]:  DatabaseInterface Initialized
+[2019-07-23 20:19:33]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:19:42]:  checking for upcoming matches
+[2019-07-23 20:19:42]:  DatabaseInterface Initialized
+[2019-07-23 20:19:42]:  Finished
+[2019-07-23 20:19:43]:  DatabaseInterface Initialized
+[2019-07-23 20:19:43]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:19:52]:  checking for upcoming matches
+[2019-07-23 20:19:52]:  DatabaseInterface Initialized
+[2019-07-23 20:19:53]:  Finished
+[2019-07-23 20:19:53]:  DatabaseInterface Initialized
+[2019-07-23 20:19:54]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:03]:  checking for upcoming matches
+[2019-07-23 20:20:03]:  DatabaseInterface Initialized
+[2019-07-23 20:20:04]:  Finished
+[2019-07-23 20:20:04]:  DatabaseInterface Initialized
+[2019-07-23 20:20:05]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:14]:  checking for upcoming matches
+[2019-07-23 20:20:14]:  DatabaseInterface Initialized
+[2019-07-23 20:20:14]:  Finished
+[2019-07-23 20:20:15]:  DatabaseInterface Initialized
+[2019-07-23 20:20:16]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:24]:  checking for upcoming matches
+[2019-07-23 20:20:24]:  DatabaseInterface Initialized
+[2019-07-23 20:20:25]:  Finished
+[2019-07-23 20:20:26]:  DatabaseInterface Initialized
+[2019-07-23 20:20:27]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:35]:  checking for upcoming matches
+[2019-07-23 20:20:35]:  DatabaseInterface Initialized
+[2019-07-23 20:20:36]:  Finished
+[2019-07-23 20:20:37]:  DatabaseInterface Initialized
+[2019-07-23 20:20:38]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:46]:  checking for upcoming matches
+[2019-07-23 20:20:46]:  DatabaseInterface Initialized
+[2019-07-23 20:20:46]:  Finished
+[2019-07-23 20:20:48]:  DatabaseInterface Initialized
+[2019-07-23 20:20:49]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:20:56]:  checking for upcoming matches
+[2019-07-23 20:20:56]:  DatabaseInterface Initialized
+[2019-07-23 20:20:57]:  Finished
+[2019-07-23 20:20:59]:  DatabaseInterface Initialized
+[2019-07-23 20:20:59]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:21:07]:  checking for upcoming matches
+[2019-07-23 20:21:07]:  DatabaseInterface Initialized
+[2019-07-23 20:21:07]:  Finished
+[2019-07-23 20:21:09]:  DatabaseInterface Initialized
+[2019-07-23 20:21:10]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:21:17]:  checking for upcoming matches
+[2019-07-23 20:21:17]:  DatabaseInterface Initialized
+[2019-07-23 20:21:18]:  Finished
+[2019-07-23 20:21:20]:  DatabaseInterface Initialized
+[2019-07-23 20:21:21]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:21:28]:  checking for upcoming matches
+[2019-07-23 20:21:28]:  DatabaseInterface Initialized
+[2019-07-23 20:21:29]:  Finished
+[2019-07-23 20:21:31]:  DatabaseInterface Initialized
+[2019-07-23 20:21:31]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:21:39]:  checking for upcoming matches
+[2019-07-23 20:21:39]:  DatabaseInterface Initialized
+[2019-07-23 20:21:40]:  Finished
+[2019-07-23 20:21:41]:  DatabaseInterface Initialized
+[2019-07-23 20:21:42]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:21:50]:  checking for upcoming matches
+[2019-07-23 20:21:50]:  DatabaseInterface Initialized
+[2019-07-23 20:21:50]:  Finished
+[2019-07-23 20:21:52]:  DatabaseInterface Initialized
+[2019-07-23 20:21:53]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:00]:  checking for upcoming matches
+[2019-07-23 20:22:00]:  DatabaseInterface Initialized
+[2019-07-23 20:22:01]:  Finished
+[2019-07-23 20:22:03]:  DatabaseInterface Initialized
+[2019-07-23 20:22:04]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:11]:  checking for upcoming matches
+[2019-07-23 20:22:11]:  DatabaseInterface Initialized
+[2019-07-23 20:22:12]:  Finished
+[2019-07-23 20:22:14]:  DatabaseInterface Initialized
+[2019-07-23 20:22:15]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:22]:  checking for upcoming matches
+[2019-07-23 20:22:22]:  DatabaseInterface Initialized
+[2019-07-23 20:22:22]:  Finished
+[2019-07-23 20:22:25]:  DatabaseInterface Initialized
+[2019-07-23 20:22:26]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:32]:  checking for upcoming matches
+[2019-07-23 20:22:32]:  DatabaseInterface Initialized
+[2019-07-23 20:22:33]:  Finished
+[2019-07-23 20:22:36]:  DatabaseInterface Initialized
+[2019-07-23 20:22:37]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:43]:  checking for upcoming matches
+[2019-07-23 20:22:43]:  DatabaseInterface Initialized
+[2019-07-23 20:22:44]:  Finished
+[2019-07-23 20:22:47]:  DatabaseInterface Initialized
+[2019-07-23 20:22:48]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:22:54]:  checking for upcoming matches
+[2019-07-23 20:22:54]:  DatabaseInterface Initialized
+[2019-07-23 20:22:54]:  Finished
+[2019-07-23 20:22:58]:  DatabaseInterface Initialized
+[2019-07-23 20:22:58]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:04]:  checking for upcoming matches
+[2019-07-23 20:23:04]:  DatabaseInterface Initialized
+[2019-07-23 20:23:05]:  Finished
+[2019-07-23 20:23:08]:  DatabaseInterface Initialized
+[2019-07-23 20:23:09]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:15]:  checking for upcoming matches
+[2019-07-23 20:23:15]:  DatabaseInterface Initialized
+[2019-07-23 20:23:16]:  Finished
+[2019-07-23 20:23:19]:  DatabaseInterface Initialized
+[2019-07-23 20:23:20]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:26]:  checking for upcoming matches
+[2019-07-23 20:23:26]:  DatabaseInterface Initialized
+[2019-07-23 20:23:26]:  Finished
+[2019-07-23 20:23:30]:  DatabaseInterface Initialized
+[2019-07-23 20:23:31]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:36]:  checking for upcoming matches
+[2019-07-23 20:23:36]:  DatabaseInterface Initialized
+[2019-07-23 20:23:37]:  Finished
+[2019-07-23 20:23:41]:  DatabaseInterface Initialized
+[2019-07-23 20:23:42]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:47]:  checking for upcoming matches
+[2019-07-23 20:23:47]:  DatabaseInterface Initialized
+[2019-07-23 20:23:48]:  Finished
+[2019-07-23 20:23:52]:  DatabaseInterface Initialized
+[2019-07-23 20:23:52]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:23:58]:  checking for upcoming matches
+[2019-07-23 20:23:58]:  DatabaseInterface Initialized
+[2019-07-23 20:23:59]:  Finished
+[2019-07-23 20:24:02]:  DatabaseInterface Initialized
+[2019-07-23 20:24:03]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:24:09]:  checking for upcoming matches
+[2019-07-23 20:24:09]:  DatabaseInterface Initialized
+[2019-07-23 20:24:09]:  Finished
+[2019-07-23 20:24:13]:  DatabaseInterface Initialized
+[2019-07-23 20:24:14]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:24:19]:  checking for upcoming matches
+[2019-07-23 20:24:19]:  DatabaseInterface Initialized
+[2019-07-23 20:24:20]:  Finished
+[2019-07-23 20:24:24]:  DatabaseInterface Initialized
+[2019-07-23 20:24:25]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:24:30]:  checking for upcoming matches
+[2019-07-23 20:24:30]:  DatabaseInterface Initialized
+[2019-07-23 20:24:30]:  Finished
+[2019-07-23 20:24:35]:  DatabaseInterface Initialized
+[2019-07-23 20:24:36]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:24:40]:  checking for upcoming matches
+[2019-07-23 20:24:40]:  DatabaseInterface Initialized
+[2019-07-23 20:24:41]:  Finished
+[2019-07-23 20:24:46]:  DatabaseInterface Initialized
+[2019-07-23 20:24:47]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:24:51]:  checking for upcoming matches
+[2019-07-23 20:24:51]:  DatabaseInterface Initialized
+[2019-07-23 20:24:52]:  Finished
+[2019-07-23 20:24:57]:  DatabaseInterface Initialized
+[2019-07-23 20:24:57]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:02]:  checking for upcoming matches
+[2019-07-23 20:25:02]:  DatabaseInterface Initialized
+[2019-07-23 20:25:03]:  Finished
+[2019-07-23 20:25:07]:  DatabaseInterface Initialized
+[2019-07-23 20:25:08]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:13]:  checking for upcoming matches
+[2019-07-23 20:25:13]:  DatabaseInterface Initialized
+[2019-07-23 20:25:13]:  Finished
+[2019-07-23 20:25:18]:  DatabaseInterface Initialized
+[2019-07-23 20:25:19]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:23]:  checking for upcoming matches
+[2019-07-23 20:25:23]:  DatabaseInterface Initialized
+[2019-07-23 20:25:24]:  Finished
+[2019-07-23 20:25:29]:  DatabaseInterface Initialized
+[2019-07-23 20:25:30]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:34]:  checking for upcoming matches
+[2019-07-23 20:25:34]:  DatabaseInterface Initialized
+[2019-07-23 20:25:35]:  Finished
+[2019-07-23 20:25:40]:  DatabaseInterface Initialized
+[2019-07-23 20:25:40]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:45]:  checking for upcoming matches
+[2019-07-23 20:25:45]:  DatabaseInterface Initialized
+[2019-07-23 20:25:45]:  Finished
+[2019-07-23 20:25:50]:  DatabaseInterface Initialized
+[2019-07-23 20:25:52]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:25:55]:  checking for upcoming matches
+[2019-07-23 20:25:55]:  DatabaseInterface Initialized
+[2019-07-23 20:25:56]:  Finished
+[2019-07-23 20:26:02]:  DatabaseInterface Initialized
+[2019-07-23 20:26:02]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:26:06]:  checking for upcoming matches
+[2019-07-23 20:26:06]:  DatabaseInterface Initialized
+[2019-07-23 20:26:07]:  Finished
+[2019-07-23 20:26:12]:  DatabaseInterface Initialized
+[2019-07-23 20:26:13]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:26:17]:  checking for upcoming matches
+[2019-07-23 20:26:17]:  DatabaseInterface Initialized
+[2019-07-23 20:26:18]:  Finished
+[2019-07-23 20:26:23]:  DatabaseInterface Initialized
+[2019-07-23 20:26:24]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:26:28]:  checking for upcoming matches
+[2019-07-23 20:26:28]:  DatabaseInterface Initialized
+[2019-07-23 20:26:29]:  Finished
+[2019-07-23 20:26:34]:  DatabaseInterface Initialized
+[2019-07-23 20:26:35]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:26:39]:  checking for upcoming matches
+[2019-07-23 20:26:39]:  DatabaseInterface Initialized
+[2019-07-23 20:26:40]:  Finished
+[2019-07-23 20:26:45]:  DatabaseInterface Initialized
+[2019-07-23 20:26:46]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:26:50]:  checking for upcoming matches
+[2019-07-23 20:26:50]:  DatabaseInterface Initialized
+[2019-07-23 20:26:50]:  Finished
+[2019-07-23 20:26:56]:  DatabaseInterface Initialized
+[2019-07-23 20:26:56]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:00]:  checking for upcoming matches
+[2019-07-23 20:27:00]:  DatabaseInterface Initialized
+[2019-07-23 20:27:01]:  Finished
+[2019-07-23 20:27:06]:  DatabaseInterface Initialized
+[2019-07-23 20:27:07]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:11]:  checking for upcoming matches
+[2019-07-23 20:27:11]:  DatabaseInterface Initialized
+[2019-07-23 20:27:12]:  Finished
+[2019-07-23 20:27:17]:  DatabaseInterface Initialized
+[2019-07-23 20:27:18]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:22]:  checking for upcoming matches
+[2019-07-23 20:27:22]:  DatabaseInterface Initialized
+[2019-07-23 20:27:22]:  Finished
+[2019-07-23 20:27:28]:  DatabaseInterface Initialized
+[2019-07-23 20:27:29]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:32]:  checking for upcoming matches
+[2019-07-23 20:27:32]:  DatabaseInterface Initialized
+[2019-07-23 20:27:33]:  Finished
+[2019-07-23 20:27:39]:  DatabaseInterface Initialized
+[2019-07-23 20:27:40]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:43]:  checking for upcoming matches
+[2019-07-23 20:27:43]:  DatabaseInterface Initialized
+[2019-07-23 20:27:43]:  Finished
+[2019-07-23 20:27:50]:  DatabaseInterface Initialized
+[2019-07-23 20:27:51]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:27:53]:  checking for upcoming matches
+[2019-07-23 20:27:53]:  DatabaseInterface Initialized
+[2019-07-23 20:27:54]:  Finished
+[2019-07-23 20:28:01]:  DatabaseInterface Initialized
+[2019-07-23 20:28:01]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:04]:  checking for upcoming matches
+[2019-07-23 20:28:04]:  DatabaseInterface Initialized
+[2019-07-23 20:28:05]:  Finished
+[2019-07-23 20:28:11]:  DatabaseInterface Initialized
+[2019-07-23 20:28:12]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:15]:  checking for upcoming matches
+[2019-07-23 20:28:15]:  DatabaseInterface Initialized
+[2019-07-23 20:28:15]:  Finished
+[2019-07-23 20:28:22]:  DatabaseInterface Initialized
+[2019-07-23 20:28:23]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:25]:  checking for upcoming matches
+[2019-07-23 20:28:25]:  DatabaseInterface Initialized
+[2019-07-23 20:28:26]:  Finished
+[2019-07-23 20:28:33]:  DatabaseInterface Initialized
+[2019-07-23 20:28:34]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:36]:  checking for upcoming matches
+[2019-07-23 20:28:36]:  DatabaseInterface Initialized
+[2019-07-23 20:28:37]:  Finished
+[2019-07-23 20:28:44]:  DatabaseInterface Initialized
+[2019-07-23 20:28:45]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:47]:  checking for upcoming matches
+[2019-07-23 20:28:47]:  DatabaseInterface Initialized
+[2019-07-23 20:28:48]:  Finished
+[2019-07-23 20:28:55]:  DatabaseInterface Initialized
+[2019-07-23 20:28:56]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:28:58]:  checking for upcoming matches
+[2019-07-23 20:28:58]:  DatabaseInterface Initialized
+[2019-07-23 20:28:58]:  Finished
+[2019-07-23 20:29:06]:  DatabaseInterface Initialized
+[2019-07-23 20:29:07]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:29:08]:  checking for upcoming matches
+[2019-07-23 20:29:08]:  DatabaseInterface Initialized
+[2019-07-23 20:29:09]:  Finished
+[2019-07-23 20:29:17]:  DatabaseInterface Initialized
+[2019-07-23 20:29:18]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:29:19]:  checking for upcoming matches
+[2019-07-23 20:29:19]:  DatabaseInterface Initialized
+[2019-07-23 20:29:20]:  Finished
+[2019-07-23 20:29:28]:  DatabaseInterface Initialized
+[2019-07-23 20:29:28]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:29:30]:  checking for upcoming matches
+[2019-07-23 20:29:30]:  DatabaseInterface Initialized
+[2019-07-23 20:29:30]:  Finished
+[2019-07-23 20:29:38]:  DatabaseInterface Initialized
+[2019-07-23 20:29:39]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:29:40]:  checking for upcoming matches
+[2019-07-23 20:29:40]:  DatabaseInterface Initialized
+[2019-07-23 20:29:41]:  Finished
+[2019-07-23 20:29:49]:  DatabaseInterface Initialized
+[2019-07-23 20:29:50]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:29:51]:  checking for upcoming matches
+[2019-07-23 20:29:51]:  DatabaseInterface Initialized
+[2019-07-23 20:29:52]:  Finished
+[2019-07-23 20:30:00]:  DatabaseInterface Initialized
+[2019-07-23 20:30:01]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:02]:  checking for upcoming matches
+[2019-07-23 20:30:02]:  DatabaseInterface Initialized
+[2019-07-23 20:30:03]:  Finished
+[2019-07-23 20:30:11]:  DatabaseInterface Initialized
+[2019-07-23 20:30:12]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:13]:  checking for upcoming matches
+[2019-07-23 20:30:13]:  DatabaseInterface Initialized
+[2019-07-23 20:30:13]:  Finished
+[2019-07-23 20:30:22]:  DatabaseInterface Initialized
+[2019-07-23 20:30:23]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:23]:  checking for upcoming matches
+[2019-07-23 20:30:23]:  DatabaseInterface Initialized
+[2019-07-23 20:30:24]:  Finished
+[2019-07-23 20:30:33]:  DatabaseInterface Initialized
+[2019-07-23 20:30:33]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:34]:  checking for upcoming matches
+[2019-07-23 20:30:34]:  DatabaseInterface Initialized
+[2019-07-23 20:30:35]:  Finished
+[2019-07-23 20:30:43]:  DatabaseInterface Initialized
+[2019-07-23 20:30:44]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:45]:  checking for upcoming matches
+[2019-07-23 20:30:45]:  DatabaseInterface Initialized
+[2019-07-23 20:30:45]:  Finished
+[2019-07-23 20:30:54]:  DatabaseInterface Initialized
+[2019-07-23 20:30:55]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:30:55]:  checking for upcoming matches
+[2019-07-23 20:30:55]:  DatabaseInterface Initialized
+[2019-07-23 20:30:56]:  Finished
+[2019-07-23 20:31:05]:  DatabaseInterface Initialized
+[2019-07-23 20:31:06]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:31:06]:  checking for upcoming matches
+[2019-07-23 20:31:06]:  DatabaseInterface Initialized
+[2019-07-23 20:31:07]:  Finished
+[2019-07-23 20:31:16]:  DatabaseInterface Initialized
+[2019-07-23 20:31:17]:  checking for upcoming matches
+[2019-07-23 20:31:17]:  DatabaseInterface Initialized
+[2019-07-23 20:31:17]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:31:17]:  Finished
+[2019-07-23 20:31:27]:  DatabaseInterface Initialized
+[2019-07-23 20:31:27]:  checking for upcoming matches
+[2019-07-23 20:31:27]:  DatabaseInterface Initialized
+[2019-07-23 20:31:28]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:31:28]:  Finished
+[2019-07-23 20:31:38]:  DatabaseInterface Initialized
+[2019-07-23 20:31:38]:  checking for upcoming matches
+[2019-07-23 20:31:38]:  DatabaseInterface Initialized
+[2019-07-23 20:31:39]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:31:39]:  Finished
+[2019-07-23 20:31:49]:  DatabaseInterface Initialized
+[2019-07-23 20:31:49]:  checking for upcoming matches
+[2019-07-23 20:31:49]:  DatabaseInterface Initialized
+[2019-07-23 20:31:49]:  Finished
+[2019-07-23 20:31:50]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00
+[2019-07-23 20:32:00]:  checking for upcoming matches
+[2019-07-23 20:32:00]:  DatabaseInterface Initialized
+[2019-07-23 20:32:00]:  DatabaseInterface Initialized
+[2019-07-23 20:32:00]:  Finished
+[2019-07-23 20:32:00]:  LI -  /matches/2335136/detona-vs-isurus-brasil-game-cup-2019 - 2019-07-23 20:10:00

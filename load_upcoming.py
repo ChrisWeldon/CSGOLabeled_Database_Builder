@@ -1,6 +1,3 @@
-from src.Exceptions import PlayerDataUnscrapableException
-from src.Exceptions import MatchDataUnscrapableException
-from src.Exceptions import MatchesListDataUnscrapableException
 from DatabaseInterface import DatabaseInterface
 import datetime, time, sched, sys
 from src.Exceptions import *
@@ -45,7 +42,7 @@ def load_upcoming():
     for m in up_matches:
         match_id = m[0]
         start_time = m[1]
-        li.log(match_id, " - ", start_time)
+        li.log(match_id + " - " + str(start_time))
         if(not di.checkUpcomingMatchInDatabase(match_id)):
             di.writeMatch(match_id)
         else:
