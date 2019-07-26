@@ -1,9 +1,9 @@
 import mysql.connector
 import datetime
-from src.Exceptions import *
+from Exceptions import *
 from Scraper import *
 import sys
-from src.Logger import Logger
+from Logger import Logger
 """
 Rebuilt version of databaseInteractor
 
@@ -11,7 +11,7 @@ This class is specific to reading the augury database.
 
 
 """
-li = Logger()
+li = Logger(name="DBInterface")
 
 class DatabaseInterface:
     def __init__(self):
@@ -43,6 +43,7 @@ class DatabaseInterface:
             return False
 
     def purgeMatch(self, mtid, complete=False):
+        li.log("Purging match with MTID " + str(mtid), type='attempt')
         purge_base_dataset = "matches"
         if complete==True:
             purge_base_dataset = "matches_complete"
@@ -82,42 +83,62 @@ class DatabaseInterface:
         # player_query  = ("SELECT player_id from players WHERE PMID in (%s,%s,%s,%s,%s)  ;") # Delete
         # cursor.execute(player_query, t1_group)
         # cursor.execute(player_query, t2_group)
-        player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
-        li.log("Deleting players from: " + str(t1_group))
-        cursor.execute(player_remove, t1_group)
-        li.log("Deleting players from: "+ str(t2_group))
-        cursor.execute(player_remove, t2_group)
-        group_remove = ("DELETE FROM groups WHERE GPMID in (%s, %s);")
-        li.log("Deleting both groups")
-        cursor.execute(group_remove, (str(t1_GPMID), str(t2_GPMID)))
-        match_remove = ("DELETE FROM "+purge_base_dataset+" WHERE MTID = " + str(mtid)+ ";")
-        li.log("Deleting match")
-        cursor.execute(match_remove)
-        self.cnx.commit()
-        cursor.close()
-        li.log("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete")
+        try:
+            player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
+            li.log("Deleting players from: " + str(t1_group))
+            cursor.execute(player_remove, t1_group)
+            li.log("Deleting players from: "+ str(t2_group))
+            cursor.execute(player_remove, t2_group)
+            group_remove = ("DELETE FROM groups WHERE GPMID in (%s, %s);")
+            li.log("Deleting both groups")
+            cursor.execute(group_remove, (str(t1_GPMID), str(t2_GPMID)))
+            match_remove = ("DELETE FROM "+purge_base_dataset+" WHERE MTID = " + str(mtid)+ ";")
+            li.log("Deleting match")
+            cursor.execute(match_remove)
+            self.cnx.commit()
+        except Exception as err:
+            li.log(traceback.format_exc, type='traceback')
+            li.log(type(err) + ": Purging match with MTID " + str(mtid) + " failed", type="error")
+        else:
+            li.log("MTID on " +purge_base_dataset+ " for " +str(mtid)+ " complete", type='success')
+        finally:
+            cursor.close()
 
     def purgeGroup(self, gpmid):
-        li.log("Purging group with GPMID " + str(gpmid))
-        cursor = self.cnx.cursor()
-        GPMID_query = ("SELECT p1, p2, p3, p4, p5 FROM groups WHERE GPMID = " +str(gpmid)+ ";")
-        cursor.execute(GPMID_query)
-        group = cursor.fetchall()[0]
-        player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
-        li.log("Deleting players from: " + str(group))
-        cursor.execute(player_remove, group)
-        group_remove = ("DELETE FROM groups WHERE GPMID = "+str(gpmid)+";")
-        cursor.execute(group_remove)
-        self.cnx.commit()
-        cursor.close()
+        li.log("Purging group with GPMID " + str(gpmid), type='attempt')
+        try:
+            cursor = self.cnx.cursor()
+            GPMID_query = ("SELECT p1, p2, p3, p4, p5 FROM groups WHERE GPMID = " +str(gpmid)+ ";")
+            cursor.execute(GPMID_query)
+            group = cursor.fetchall()[0]
+            player_remove = ("DELETE FROM players WHERE PMID in (%s,%s,%s,%s,%s);") # Delete
+            li.log("Deleting players from: " + str(group))
+            cursor.execute(player_remove, group)
+            group_remove = ("DELETE FROM groups WHERE GPMID = "+str(gpmid)+";")
+            cursor.execute(group_remove)
+            self.cnx.commit()
+        except Exception as err:
+            li.log(traceback.format_exc(), type='traceback')
+            li.log(type(err) + ": Purging group with GPMID " + str(gpmid) + " failed", type='error')
+        else:
+            li.log("Purging group with GPMID " + str(gpmid) + " success", type='success')
+        finally:
+            cursor.close()
 
     def purgePlayer(self, pmid):
-        li.log("Purging player pmid "+ str(pmid))
-        cursor = self.cnx.cursor()
-        player_remove = ("DELETE FROM players WHERE PMID = "+str(pmid)+";")
-        cursor.execute(player_remove)
-        self.cnx.commit()
-        cursor.close()
+        try:
+            li.log("Purging player PMID "+ str(pmid), type='attempt')
+            cursor = self.cnx.cursor()
+            player_remove = ("DELETE FROM players WHERE PMID = "+str(pmid)+";")
+            cursor.execute(player_remove)
+            self.cnx.commit()
+        except Exception as err:
+            li.log(traceback.format_exc(), type='traceback')
+            li.log(type(err) + ": Purging player PMID "+ str(pmid) + " failed", type='error')
+        else:
+            li.log("Purging player PMID "+ str(pmid) + " success", type='success')
+        finally:
+            cursor.close()
 
     def purgeMatchComplete(self, mtid):
         self.purgeMatch(mtid, complete=True)
@@ -297,32 +318,30 @@ class DatabaseInterface:
             li.log(str(status_match) + " -  "+ str(match_id)+ " - "+ str(date_start))
 
     def writeMatch(self, match_id):
-        li.log("\n")
         li.log("------------------ "+ str(match_id.split("/")[2])+" -----------------")
         cursor = self.cnx.cursor()
         try:
             data = getMatchData(match_id)
         except MatchDataUnscrapableException as err:
-            li.log("Match data unscrabable for : "+ str(match_id))
+            li.log(traceback.format_exc(), type="traceback")
             return
 
         t1_lineup = data['team_1']['players']
         t2_lineup = data['team_2']['players']
         if len(t1_lineup) != 5 or len(t2_lineup) != 5:
-            li.log("Total Lineup does not equal 10, Not able to write match to database")
             cursor.close()
-            return
+            raise LineupIncompleteException("Total lineup not 10")
         try:
             t1 = self.writeGroup(data['team_1']['team_id'],t1_lineup)
         except WriteGroupException as err:
-            li.log(err)
+            li.log(traceback.format_exc(), type='traceback')
             li.log("failed to write team1 data for match "+ str(match_id))
             cursor.close()
             return
         try:
             t2 = self.writeGroup(data['team_2']['team_id'],t2_lineup)
         except WriteGroupException as err:
-            li.log(err)
+            li.log(traceback.format_exc(), type='traceback')
             li.log("failed to write team2 data for match "+ str(match_id))
             self.purgeGroup(t1) #Unable to write group data for t2 so purge the stuff that worked
             cursor.close()
@@ -358,18 +377,16 @@ class DatabaseInterface:
             match_type = 7
         mtid_data = (data["match_id"], t1, t2, match_type , datetime.fromtimestamp((int(data["start_datetime"]) / 1e3)), datetime.now())
         try:
-            li.log("DatabaseInterface: Writing Match Data to Database")
+            li.log("Writing Match Data to Database")
             cursor.execute(add_mtid, mtid_data)
             self.cnx.commit()
         except Exception as err:
-            li.log(err)
             raise WriteMatchException("Failed to write match data")
         cursor.close()
 
     #Not open to outside use
     def writeGroup(self, team_id, team_lineup):
         cursor = self.cnx.cursor()
-
         pmids_lineup = []
         for p in team_lineup:
             try:
@@ -400,11 +417,10 @@ class DatabaseInterface:
         # gpmid_data = (p0,p1,p2,p3,p4, team_id)
         gpmid_data = (pmids_lineup[0],pmids_lineup[1],pmids_lineup[2],pmids_lineup[3],pmids_lineup[4] , team_id)
         try:
-            li.log("DatabaseInterface: writing group data to database")
+            li.log("Writing group data to database")
             cursor.execute(add_gpmid, gpmid_data)
             self.cnx.commit()
         except Exception as err:
-            li.log(err)
             raise WriteGroupException("Failed to write group data, likely a database issue and not the code")
 
         id = cursor.lastrowid
@@ -515,14 +531,11 @@ class DatabaseInterface:
                     int(data["1 on 5 Wins"]),
                     datetime.now()
                     )
-        li.log("DatabaseInterface: writing player data to database")
         try:
+            li.log("Writing player data to database")
             cursor.execute(add_pmid, pmid_data)
             self.cnx.commit()
         except MySQLInterfaceError as err:
-            li.log(err)
-            li.log("Unable to write player data for "+ str(player_id))
             raise WritePlayerException("Unable to write player data for " + str(player_id))
         id = cursor.lastrowid      #Collects all player data and creates PMID
         return id
-        pass

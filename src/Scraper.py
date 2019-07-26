@@ -1,15 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 import traceback
-from src.Exceptions import PlayerDataUnscrapableException
-from src.Exceptions import MatchDataUnscrapableException
-from src.Exceptions import MatchesListDataUnscrapableException
+from Exceptions import *
 import time
 from datetime import datetime, timedelta
-from src.Logger import Logger
+from Logger import Logger
 
 headers = requests.utils.default_headers()
-li = Logger()
+li = Logger(name=__name__)
 
 
 def getMatchOver(match_id):
@@ -27,7 +25,7 @@ def getMatchOver(match_id):
         return "NL"
 
 def getPlayerData(id,name):
-    print("Scraper: getting player data for - ", id, "/", name)
+    li.logger("Getting player data for - " + str(id) +  "/" + name)
     try:
         url='https://www.hltv.org/stats/players/'+str(id)+'/'+str(name)
         headers = requests.utils.default_headers()
@@ -72,7 +70,6 @@ def getPlayerData(id,name):
         data.update({"Rating 2.0" : str(soup.find('div', class_='two-col').find('div', class_='col').find('div', class_='cell').find('span', class_='statsVal').text.strip())})
         return data
     except Exception:
-        print("Player scrping excpetion")
         raise PlayerDataUnscrapableException("Player Data Unscrapable")
 
 def getMatches():
@@ -88,7 +85,7 @@ def getMatches():
         raise MatchesListDataUnscrapableException("Matches Data Unscrapable")
 
 def getMatchData(match_id):
-    print("Scraper.py: getting Match data for ", match_id)
+    li.log("getMatchData called")
     try:
         url = 'https://www.hltv.org' + match_id
         headers.update({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'})
@@ -105,7 +102,8 @@ def getMatchData(match_id):
             live = False
         return { "match_id": match_id , "team_1" : {"team_id" : '/'.join(t1url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup1.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup1.find('div',class_='team-country').text.strip()}, "team_2" : {"team_id" : '/'.join(t2url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup2.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup2.find('div',class_='team-country').text.strip()}, "start_datetime" : soup.find('div',class_='timeAndEvent').find('div',class_='time').get('data-unix'), "match_type": soup.find('div', class_='standard-box veto-box').find('div', class_='padding preformatted-text').text.strip(), "live":live}
     except Exception:
-        raise MatchDataUnscrapableException("Match Data Unscrapable")
+        #li.log(traceback.format_exc(), type='traceback') Bubbles up
+        raise MatchDataUnscrapableException('MatchDataUnscrapable')
 
 def getUpcomingMatches(interval_minutes):
     url='https://www.hltv.org/matches'
@@ -126,6 +124,9 @@ def getUpcomingMatches(interval_minutes):
             break
         if start_time < until_match_limit:
             ret_urls.append(murls[i])
+    if len(ret_urls) != 0:
+        li.log(str(len(ret_urls)) + " Matches within " + str(interval_minutes) + " minutes")
+        li.loglist(ret_urls)
     return(ret_urls)
 
 def get50MatchData(): #not error handled
@@ -139,7 +140,7 @@ def get50MatchData(): #not error handled
     counter=1
     for url in murls:
         try:
-            print('Scraping match {0} of {1}'.format(counter,len(murls)))
+            li.logger('Scraping match {0} of {1}'.format(counter,len(murls)))
             soup=BeautifulSoup(requests.get(url,headers=headers).content,'html.parser')
             t1url='https://www.hltv.org' + soup.find('div',class_='standard-box teamsBox').findAll('div',class_='team')[0].find('a').get('href')
             t2url='https://www.hltv.org' + soup.find('div',class_='standard-box teamsBox').findAll('div',class_='team')[-1].find('a').get('href')
@@ -148,28 +149,26 @@ def get50MatchData(): #not error handled
             data['match_' + str(counter) + '_id'] = { '/'.join(url.split('/')[-2:]) : { "team_1" : {"team_id" : '/'.join(t1url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup1.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup1.find('div',class_='team-country').text.strip()}, "team_2" : {"team_id" : '/'.join(t2url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup2.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup2.find('div',class_='team-country').text.strip()}}, "start_datetime" : soup.find('div',class_='timeAndEvent').find('div',class_='time').get('data-unix')}
             counter+=1
         except Exception as e:
-            print(e)
+            li.logger(e)
             continue
     return data
 
 def getResultMatchData(match_id):
     matchurl = "https://www.hltv.org" + match_id
-    print(matchurl)
-    print('\033[1;37;40mSetting Headers' ,end=' ')
+    li.logger(matchurl)
     headers.update({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'})
-    print('\033[1;32;40mDone')
-    print('\033[1;37;40mScraping page' ,end=' ')
+    li.logger('Scraping page')
     page=''
     while 'Response' not in str(page):
         try:
             page=requests.get(matchurl,headers=headers)
         except:
-            print("\033[1;31;40mSomething went wrong, attempting again in 10 seconds")
+            li.logger("Something went wrong, attempting again in 10 seconds", type='error')
             time.sleep(10)
             pass
-    print('\033[1;32;40mDone')
+    li.logger('Done', type='success')
     soup=BeautifulSoup(page.content,'html.parser')
-    print('\033[1;37;40mExtracting Data' ,end=' ')
+    li.logger('Extracting Data')
     data=''
     data={'match_id' : '/'+'/'.join(matchurl.split('/')[3:])}
     t1_overall_score=''
@@ -224,6 +223,6 @@ def getResultMatchData(match_id):
         data['t1_map' + str(x+1) + '_score'] = mapdata[x][1]
         data['t2_map' + str(x+1) + '_score'] = mapdata[x][2]
         data['t1_map' + str(x+1) + '_win'] = mapdata[x][3]
-        print('\033[1;32;40mDone\033[1;37;40m')
+        li.logger('Done', type='succes')
 
     return data
