@@ -39,7 +39,6 @@ schedule_time = 10
 s = sched.scheduler(time.time, time.sleep)
 li = Logger(name="main_results")
 di = DatabaseInterface()
-li.log("Database Initialized")
 
 def load_results():
     try:
@@ -51,5 +50,6 @@ def load_results():
     s.enter(schedule_time, 1, load_results)
 
 if __name__ == "__main__":
+    li.log("Label collection started")
     s.enter(schedule_time, 1, load_results)
     s.run()

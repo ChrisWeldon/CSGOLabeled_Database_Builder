@@ -54,7 +54,6 @@ class Logger:
         for i in list:
             print("\t\t - " + log_style + str(i) + Style.RESET_ALL)
             self.writeToLog(str(i), now = now)
-        print("\n")
         pass
 
     def writeToLog(self, statement, now=None):

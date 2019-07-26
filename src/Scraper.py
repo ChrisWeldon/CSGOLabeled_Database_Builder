@@ -25,7 +25,7 @@ def getMatchOver(match_id):
         return "NL"
 
 def getPlayerData(id,name):
-    li.logger("Getting player data for - " + str(id) +  "/" + name)
+    li.log("Getting player data for - " + str(id) +  "/" + name)
     try:
         url='https://www.hltv.org/stats/players/'+str(id)+'/'+str(name)
         headers = requests.utils.default_headers()

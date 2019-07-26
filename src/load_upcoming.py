@@ -31,31 +31,35 @@ Match type:
 #cronned for every 5 minutes or so
 #team_lineup = ['695/allu', '4076/Aerial', '7248/xseveN', '9816blah/Aleksib', '11916/sergej']
 
-schedule_time = 10
+schedule_time = 30
 s = sched.scheduler(time.time, time.sleep)
 li = Logger(name="main_upcm")
 di = DatabaseInterface()
 
 def load_upcoming():
-    up_matches  = getUpcomingMatches(20)
-    for m in up_matches:
-        match_id = m[0]
-        start_time = m[1]
-        if(not di.checkUpcomingMatchInDatabase(match_id)):
-            li.log("Match_id available", type="success") # weird that the except warrants success. That's fine though
-            try:
-                di.writeMatch(match_id)
-            except LineupIncompleteException as err:
-                li.log(traceback.format_exc(), type='traceback')
-                pass
-            except WriteMatchException as err:
-                li.log(traceback.format_exc(), type='traceback')
-                pass
-        else:
-            li.log("already collected " + match_id)
+    try:
+        up_matches  = getUpcomingMatches(20)
+        for m in up_matches:
+            match_id = m[0]
+            start_time = m[1]
+            if(not di.checkUpcomingMatchInDatabase(match_id)):
+                #li.log(match_id.split('/')[2] + " available", type="success") # weird that the except warrants success. That's fine though
+                try:
+                    di.writeMatch(match_id)
+                except LineupIncompleteException as err:
+                    #li.log(traceback.format_exc(), type='traceback')
+                    pass
+                except WriteMatchException as err:
+                    li.log(traceback.format_exc(), type='traceback')
+                    pass
+            else:
+                li.log("already collected " + match_id)
+    except Exception as err:
+        li.log(traceback.format_exc, type='traceback')
+        li.log(type(err).__name__, type='error')
     s.enter(schedule_time, 1, load_upcoming)
 
 if __name__ == "__main__":
-    li.log("Starting Feature Collection")
+    li.log("Feature Collection Started")
     s.enter(1, 1, load_upcoming)
     s.run()
