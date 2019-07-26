@@ -5,7 +5,7 @@ from DatabaseInterface import DatabaseInterface
 import datetime, time, sched
 from Exceptions import *
 from Scraper import *
-import Logger as Logger
+from Logger import Logger
 import sys
 """
 
@@ -37,7 +37,7 @@ Match type:
 
 schedule_time = 10
 s = sched.scheduler(time.time, time.sleep)
-li = Logger(name="load_results")
+li = Logger(name="main_results")
 di = DatabaseInterface()
 li.log("Database Initialized")
 
