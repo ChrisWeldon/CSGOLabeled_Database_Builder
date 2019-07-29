@@ -33,7 +33,7 @@ Match type:
 
 schedule_time = 30
 s = sched.scheduler(time.time, time.sleep)
-li = Logger(name="main_upcm")
+li = Logger(name="main_upcm", caller="load_upcomingpy")
 di = DatabaseInterface()
 
 def load_upcoming():

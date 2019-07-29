@@ -2,14 +2,19 @@ from datetime import datetime
 from colorama import Fore, Back, Style
 
 class Logger:
-    def __init__(self, name=None, dir_rel='../logs/'):
+    def __init__(self, name=None, dir_rel='../logs/', caller="undeclared"):
         self.dir_rel = dir_rel
         self.name = name
+        self.caller = caller
         self.logfile = "dateless.txt"
-        if name:
+        if self.name:
             self.logname_w_style = (Style.DIM + "(" + self.name + ") " + Style.RESET_ALL + "\t")
         else:
             self.logname_w_style = ""
+
+    def setName(self, name):
+        self.name = name
+        self.logname_w_style = (Style.DIM + "(" + self.name + ") " + Style.RESET_ALL + "\t")
 
     def log(self, statement, type='default', style='default'):
         log_style = ""
@@ -24,11 +29,11 @@ class Logger:
 
 
         now = datetime.now()
-        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + ".log"
-        logtime = "[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  "
-        logtime_w_style = (Style.DIM + logtime + Style.RESET_ALL)
-        log = (logtime_w_style + self.logname_w_style + log_style + statement + Style.RESET_ALL)
-        print(log)
+        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + "-" + self.caller + ".log"
+        logtime = "[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]"
+        logtime_w_style = (Style.DIM + logtime + "["+self.caller+"]" +":  " + Style.RESET_ALL)
+        log_print = (logtime_w_style + self.logname_w_style + log_style + statement + Style.RESET_ALL)
+        print(log_print)
         self.writeToLog(statement, now=now)
         pass
 
@@ -60,7 +65,7 @@ class Logger:
     def writeToLog(self, statement, now=None):
         with open(self.logfile, "a") as f:
             if now:
-                f.write("[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  " + self.logname_w_style + statement + "\n")
+                f.write("[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  (" + self.name +") " + statement + "\n")
             else:
                 f.write("\t" + statement + "\n")
 

@@ -37,7 +37,7 @@ Match type:
 
 schedule_time = 10
 s = sched.scheduler(time.time, time.sleep)
-li = Logger(name="main_results")
+li = Logger(name="load_results", caller="load_resultspy")
 di = DatabaseInterface()
 
 def load_results():
@@ -51,5 +51,5 @@ def load_results():
 
 if __name__ == "__main__":
     li.log("Label collection started")
-    s.enter(schedule_time, 1, load_results)
+    s.enter(1, 1, load_results)
     s.run()

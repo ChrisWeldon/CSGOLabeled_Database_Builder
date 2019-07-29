@@ -11,7 +11,7 @@ This class is specific to reading the augury database.
 
 
 """
-li = Logger(name="DBInterface")
+li = Logger(name="DBI")
 
 class DatabaseInterface:
     def __init__(self):
@@ -539,3 +539,6 @@ class DatabaseInterface:
             raise WritePlayerException("Unable to write player data for " + str(player_id))
         id = cursor.lastrowid      #Collects all player data and creates PMID
         return id
+
+if __name__ == "__main__":
+    di = DatabaseInterface(logger=Logger(name="TestDBI", caller="DatabaseInterfaceMain"))

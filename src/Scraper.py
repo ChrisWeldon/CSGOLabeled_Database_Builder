@@ -9,7 +9,6 @@ from Logger import Logger
 headers = requests.utils.default_headers()
 li = Logger(name=__name__)
 
-
 def getMatchOver(match_id):
     url='https://www.hltv.org' + match_id
     headers = requests.utils.default_headers()
@@ -166,7 +165,6 @@ def getResultMatchData(match_id):
             li.log("Something went wrong, attempting again in 10 seconds", type='error')
             time.sleep(10)
             pass
-    li.log('Done', type='success')
     soup=BeautifulSoup(page.content,'html.parser')
     li.log('Extracting Data')
     data=''
@@ -223,6 +221,5 @@ def getResultMatchData(match_id):
         data['t1_map' + str(x+1) + '_score'] = mapdata[x][1]
         data['t2_map' + str(x+1) + '_score'] = mapdata[x][2]
         data['t1_map' + str(x+1) + '_win'] = mapdata[x][3]
-        li.log('Done', type='success')
 
     return data

@@ -34,10 +34,8 @@ li = Logger()
 #team_lineup = ['695/allu', '4076/Aerial', '7248/xseveN', '9816blah/Aleksib', '11916/sergej']
 
 def main():
-    raise PlayerDataUnscrapableException("Blah")
-
+    print(li.__class__.__name__)
     li.log("Finished")
-    del di
 
 if __name__ == "__main__":
     main()
