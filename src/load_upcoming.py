@@ -55,7 +55,7 @@ def load_upcoming():
             else:
                 li.log("already collected " + match_id)
     except Exception as err:
-        li.log(traceback.format_exc, type='traceback')
+        li.log(traceback.format_exc(), type='traceback')
         li.log(type(err).__name__, type='error')
     s.enter(schedule_time, 1, load_upcoming)
 

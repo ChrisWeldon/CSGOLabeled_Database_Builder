@@ -12,6 +12,7 @@ class Logger:
             self.logname_w_style = ""
 
     def log(self, statement, type='default', style='default'):
+        log_style = ""
         if type == 'default':
             log_style = ""
         elif type == 'error':

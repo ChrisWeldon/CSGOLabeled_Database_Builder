@@ -44,8 +44,8 @@ def load_results():
     try:
         di.checkWriteResults()
     except Exception as err:
-        li.log(traceback.format(), type="traceback")
-        li.log(type(err) + ": Failed checkWriteResults", type="error")
+        li.log(traceback.format_exc(), type="traceback")
+        li.log(str(err.__class__.__name__)+ ": Failed checkWriteResults", type="error")
 
     s.enter(schedule_time, 1, load_results)
 

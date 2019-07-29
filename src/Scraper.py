@@ -140,7 +140,7 @@ def get50MatchData(): #not error handled
     counter=1
     for url in murls:
         try:
-            li.logger('Scraping match {0} of {1}'.format(counter,len(murls)))
+            li.log('Scraping match {0} of {1}'.format(counter,len(murls)))
             soup=BeautifulSoup(requests.get(url,headers=headers).content,'html.parser')
             t1url='https://www.hltv.org' + soup.find('div',class_='standard-box teamsBox').findAll('div',class_='team')[0].find('a').get('href')
             t2url='https://www.hltv.org' + soup.find('div',class_='standard-box teamsBox').findAll('div',class_='team')[-1].find('a').get('href')
@@ -149,26 +149,26 @@ def get50MatchData(): #not error handled
             data['match_' + str(counter) + '_id'] = { '/'.join(url.split('/')[-2:]) : { "team_1" : {"team_id" : '/'.join(t1url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup1.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup1.find('div',class_='team-country').text.strip()}, "team_2" : {"team_id" : '/'.join(t2url.split('/')[-2:]) , "players" : ['/'.join(x.get('href').split('/')[-2:]) for x in soup2.find('div',class_='bodyshot-team-bg').findAll('a')] , "team_country" : soup2.find('div',class_='team-country').text.strip()}}, "start_datetime" : soup.find('div',class_='timeAndEvent').find('div',class_='time').get('data-unix')}
             counter+=1
         except Exception as e:
-            li.logger(e)
+            li.log(e)
             continue
     return data
 
 def getResultMatchData(match_id):
     matchurl = "https://www.hltv.org" + match_id
-    li.logger(matchurl)
+    li.log(matchurl)
     headers.update({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'})
-    li.logger('Scraping page')
+    li.log('Scraping page')
     page=''
     while 'Response' not in str(page):
         try:
             page=requests.get(matchurl,headers=headers)
         except:
-            li.logger("Something went wrong, attempting again in 10 seconds", type='error')
+            li.log("Something went wrong, attempting again in 10 seconds", type='error')
             time.sleep(10)
             pass
-    li.logger('Done', type='success')
+    li.log('Done', type='success')
     soup=BeautifulSoup(page.content,'html.parser')
-    li.logger('Extracting Data')
+    li.log('Extracting Data')
     data=''
     data={'match_id' : '/'+'/'.join(matchurl.split('/')[3:])}
     t1_overall_score=''
@@ -223,6 +223,6 @@ def getResultMatchData(match_id):
         data['t1_map' + str(x+1) + '_score'] = mapdata[x][1]
         data['t2_map' + str(x+1) + '_score'] = mapdata[x][2]
         data['t1_map' + str(x+1) + '_win'] = mapdata[x][3]
-        li.logger('Done', type='succes')
+        li.log('Done', type='success')
 
     return data
