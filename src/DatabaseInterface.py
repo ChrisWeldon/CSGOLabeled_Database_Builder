@@ -152,6 +152,7 @@ class DatabaseInterface:
             match_id = row[1]
             date_start = row[2]
             status_match = getMatchOver(match_id)
+            #li.log(str(status_match) + " -  "+ str(match_id)+ " - "+ str(date_start))
             if status_match == "MO": #match over
                 #collect results
                 copy = ("INSERT INTO matches_complete(MTID, match_id, t1_GPMID, t2_GPMID, match_type, date_start, date_collected) SELECT MTID, match_id, t1_GPMID, t2_GPMID, match_type, date_start, date_collected from matches WHERE MTID='" + str(mtid) + "';")
@@ -315,7 +316,6 @@ class DatabaseInterface:
                 self.purgeMatch(mtid)
                 pass
             cursor.close()
-            li.log(str(status_match) + " -  "+ str(match_id)+ " - "+ str(date_start))
 
     def writeMatch(self, match_id):
         li.log("------------------ "+ str(match_id.split("/")[2])+" -----------------")

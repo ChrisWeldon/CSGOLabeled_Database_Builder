@@ -1,22 +1,21 @@
 from datetime import datetime
 from colorama import Fore, Back, Style
+import inspect
 
 class Logger:
-    def __init__(self, name=None, dir_rel='../logs/', caller="undeclared"):
+    def __init__(self, name=None, dir_rel='../logs/'):
         self.dir_rel = dir_rel
         self.name = name
-        self.caller = caller
         self.logfile = "dateless.txt"
         if self.name:
             self.logname_w_style = (Style.DIM + "(" + self.name + ") " + Style.RESET_ALL + "\t")
         else:
             self.logname_w_style = ""
 
-    def setName(self, name):
-        self.name = name
-        self.logname_w_style = (Style.DIM + "(" + self.name + ") " + Style.RESET_ALL + "\t")
-
     def log(self, statement, type='default', style='default'):
+        curframe = inspect.currentframe()
+        calframe = inspect.getouterframes(curframe, 2)
+        caller = calframe[-1][1]
         log_style = ""
         if type == 'default':
             log_style = ""
@@ -26,18 +25,24 @@ class Logger:
             log_style = Fore.GREEN
         elif type == 'traceback':
             log_style = '\033[91m' #Light Red
+        elif type == 'attempt':
+            log_style = '\033[33m'#Orange
 
 
         now = datetime.now()
-        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + "-" + self.caller + ".log"
+        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + "-" + caller + ".log"
         logtime = "[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]"
-        logtime_w_style = (Style.DIM + logtime + "["+self.caller+"]" +":  " + Style.RESET_ALL)
+        logtime_w_style = (Style.DIM + logtime + "["+caller+"]" +":  " + Style.RESET_ALL)
         log_print = (logtime_w_style + self.logname_w_style + log_style + statement + Style.RESET_ALL)
         print(log_print)
         self.writeToLog(statement, now=now)
         pass
 
     def loglist(self, list, type='default', style='default'):
+        curframe = inspect.currentframe()
+        calframe = inspect.getouterframes(curframe, 2)
+        caller = calframe[-1][1]
+
         if type == 'default':
             log_style = ""
         elif type == 'error':
@@ -51,7 +56,7 @@ class Logger:
 
 
         now = datetime.now()
-        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + ".log"
+        self.logfile = self.dir_rel+ now.strftime("%Y-%m-%d") + "-" + caller + ".log"
         logtime = "[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  "
         logtime_w_style = (Style.DIM + logtime + Style.RESET_ALL)
         log = (logtime_w_style + self.logname_w_style + log_style + "<List>"+ Style.RESET_ALL)

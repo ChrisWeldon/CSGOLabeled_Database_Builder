@@ -37,7 +37,7 @@ Match type:
 
 schedule_time = 10
 s = sched.scheduler(time.time, time.sleep)
-li = Logger(name="load_results", caller="load_resultspy")
+li = Logger(name="load_results")
 di = DatabaseInterface()
 
 def load_results():

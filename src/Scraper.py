@@ -17,10 +17,13 @@ def getMatchOver(match_id):
     soup=BeautifulSoup(page.content,'html.parser')
     countdown = soup.findAll('div', class_="countdown")[0].text.strip().lower()
     if countdown == "match over":
+        #li.log("Countdown: " + countdown)
         return "MO"
     elif countdown == "live":
+        #li.log("Countdown: " + countdown)
         return "LI"
     else:
+        li.log("Countdown: " + countdown)
         return "NL"
 
 def getPlayerData(id,name):
