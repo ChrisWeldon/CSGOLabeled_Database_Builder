@@ -49,27 +49,27 @@ There are 4 tables: matches, matches_complete, groups, and players.
 
 matches
 Feature | Type | Description
-`MTID` | int(11) | **Primary Key** The Match Time Id 
-`match_id` | varchar(100) |
-`t1_GPMID` | int(11) |
-`t2_GPMID` | int(11) |
-`match_type` | int(11) |
-`map_1` | varchar(100) |
-`map_t1_win` | tinyint(1) |
-`map_2` | varchar(20) |
-`map_t2_win` | tinyint(1) |
-`map_3` | varchar(20) |
-`map_t3_win` | tinyint(1) |
-`map_4` | varchar(20) |
-`map_t4_win` | tinyint(1) |
-`map_5` | varchar(20) |
-`map_t5_win` | tinyint(1) |
-`t1_score` | int(11) |
-`t2_score` | int(11) |
-`t1_win` | tinyint(1) |
-`date_start` | datetime |
-`date_delay` | datetime |
-`date_collected`| date |
+`MTID` | int(11) | **Primary Key** The Match Time Id
+`match_id` | varchar(100) | Blah
+`t1_GPMID` | int(11) | Blah
+`t2_GPMID` | int(11) | Blah
+`match_type` | int(11) | Blah
+`map_1` | varchar(100) | Blah
+`map_t1_win` | tinyint(1) | Blah
+`map_2` | varchar(20) | Blah
+`map_t2_win` | tinyint(1) | Blah
+`map_3` | varchar(20) | Blah
+`map_t3_win` | tinyint(1) | Blah
+`map_4` | varchar(20) | Blah
+`map_t4_win` | tinyint(1) | Blah
+`map_5` | varchar(20) | Blah
+`map_t5_win` | tinyint(1) | Blah
+`t1_score` | int(11) | Blah
+`t2_score` | int(11) | Blah
+`t1_win` | tinyint(1) | Blah
+`date_start` | datetime | Blah
+`date_delay` | datetime | Blah
+`date_collected`| date | Blah
 
 
 CREATE TABLE `matches_complete`
