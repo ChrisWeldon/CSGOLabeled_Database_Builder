@@ -37,17 +37,6 @@ There are 4 tables: matches, matches_complete, groups, and players.
  - 5 players for every row in groups
 
  ### Schema
-**`augury.groups`**
-
-Feature | Type | Description
----|---|---
-`GPMID` | int(11) | **Primary Key** Group Player Match ID
-`p1` | int(11) | PMID for player 1 of group GPMID
-`p2` | int(11) | PMID for player 2 of group GPMID
-`p3` | int(11) | PMID for player 3 of group GPMID
-`p4` | int(11) | PMID for player 4 of group GPMID
-`p5` | int(11) | PMID for player 5 of group GPMID
-`team_id` | varchar(30) | The HLTV.org Id of the team
 
 
 **`augury.matches`**
@@ -104,52 +93,65 @@ Feature | Type | Description
 `map5_t1_score` |  int(11) | Score achieved by team 1 on map 5
 `map5_t2_score` |  int(11) | Score achieved by team 2 on map 5
 
+**`augury.groups`**
 
+Feature | Type | Description
+---|---|---
+`GPMID` | int(11) | **Primary Key** Group Player Match ID
+`p1` | int(11) | PMID for player 1 of group GPMID
+`p2` | int(11) | PMID for player 2 of group GPMID
+`p3` | int(11) | PMID for player 3 of group GPMID
+`p4` | int(11) | PMID for player 4 of group GPMID
+`p5` | int(11) | PMID for player 5 of group GPMID
+`team_id` | varchar(30) | The HLTV.org Id of the team
 
-CREATE TABLE `players`
-`PMID` int(11)
-`player_name` varchar(50)
-`player_id` varchar(50)
-`rating2` float(3,2)
-`rating1` float(3,2)
-`ks_per_rnd` float(4,2)
-`assists_per_rnd` float(4,2)
-`saved_by_teammate_per_rnd` float(4,2)
-`saves_per_rnd` float(4,2)
-`headshots` float(4,3)
-`maps_played` int(11)
-`deaths_per_rnd` float(4,2)
-`age` int(11)
-`country` int(11)
-`total_ks` int(11)
-`total_deaths` int(11)
-`k_death_ratio` float(3,2)
-`damage_per_rnd` float(4,2)
-`grenade_per_rnd` float(4,2)
-`rnds_played` int(11)
-`rnds_with_ks` int(11)
-`_0_k_rnds` int(11)
-`_1_k_rnds` int(11)
-`_2_k_rnds` int(11)
-`_3_k_rnds` int(11)
-`_4_k_rnds` int(11)
-`_5_k_rnds` int(11)
-`rifle_ks` int(11)
-`sniper_ks` int(11)
-`smg_ks` int(11)
-`pistol_ks` int(11)
-`grenade_ks` int(11)
-`other_ks` int(11)
-`opening_ks` int(11)
-`opening_deaths` int(11)
-`opening_k_ratio` float(4,2)
-`opening_k_rating` float(4,2)
-`team_win_percent_after_first_k` float(4,3)
-`first_k_in_won_rounds` float(4,3)
-`date_collected` datetime
-`clutch_1v1_w` int(11)
-`clutch_1v2_w` int(11)
-`clutch_1v3_w` int(11)
-`clutch_1v4_w` int(11)
-`clutch_1v5_w` int(11)
-`clutch_1v1_l` int(11)
+`augury.players`
+
+Feature | Type | Description
+---|---|---
+`PMID`  | int(11) | **Primary Key** Player Match ID
+`player_name` | varchar(50) | The players name
+`player_id` | varchar(50) | HLTV.org id
+`rating2` | float(3,2) | HLTV.org Rating 2.0
+`rating1` | float(3,2) | HTLV.org Rating 1.0
+`ks_per_rnd` | float(4,2) | Players average kills per round
+`assists_per_rnd` | float(4,2) | Players average assists per round
+`saved_by_teammate_per_rnd` | float(4,2) | Players average saved by teammate per round
+`saves_per_rnd` | float(4,2) | Players average saves per round
+`headshots` | float(4,3) | Players average headshots per round
+`maps_played` | int(11) | Total maps played
+`deaths_per_rnd` | float(4,2) | Players average deaths per round
+`age` | int(11) | Players age
+`country` | int(11) | Players country of origin
+`total_ks` | int(11) | Players total kills
+`total_deaths` | int(11) | Players total deaths
+`k_death_ratio` | float(3,2) | Players kill to death ratio
+`damage_per_rnd` | float(4,2) | Players average damage per round
+`grenade_per_rnd` | float(4,2) | Players average grenade damage per round
+`rnds_played` | int(11) | Players total rounds played
+`rnds_with_ks` | int(11) | Players total rounds where he has scored a kill
+`_0_k_rnds` | int(11) | Players total rounds with 0 kills
+`_1_k_rnds` | int(11) | Players total rounds with 1 kills
+`_2_k_rnds` | int(11) | Players total rounds with 2 kills
+`_3_k_rnds` | int(11) | Players total rounds with 3 kills
+`_4_k_rnds` | int(11) | Players total rounds with 4 kills
+`_5_k_rnds` | int(11) | Players total rounds with 5 kills
+`rifle_ks` | int(11) | Players total rifle kills
+`sniper_ks` | int(11) | Players total sniper kills
+`smg_ks` | int(11) | Players total smg kills
+`pistol_ks` | int(11) | Players total pistol kills
+`grenade_ks` | int(11) | Players total grenade kills
+`other_ks` | int(11) | Players total kills in other ways
+`opening_ks` | int(11) | Players total opening kills
+`opening_deaths` | int(11) | Players totall opening deaths
+`opening_k_ratio` | float(4,2) | Players opening k ratio
+`opening_k_rating` | float(4,2) | TBD
+`team_win_percent_after_first_k` | float(4,3) |  The win percentage that is achieved after he gets first kill
+`first_k_in_won_rounds` | float(4,3) | Number of times he has gotten first kill in won rounds
+`date_collected` | datetime | Date collected
+`clutch_1v1_w` | int(11) | Total wins alone agains 1 players
+`clutch_1v2_w` | int(11) | Total wins alone agains 2 players
+`clutch_1v3_w` | int(11) | Total wins alone agains 3 players
+`clutch_1v4_w` | int(11) | Total wins alone agains 4 players
+`clutch_1v5_w` | int(11) | Total wins alone agains 5 players
+`clutch_1v1_l` | int(11) | Total losses alone agains 1 players
