@@ -37,21 +37,24 @@ There are 4 tables: matches, matches_complete, groups, and players.
  - 5 players for every row in groups
 
  ### Schema
-
-`GPMID` int(11) NOT NULL,
-`p1` int(11) DEFAULT NULL,
-`p2` int(11) DEFAULT NULL,
-`p3` int(11) DEFAULT NULL,
-`p4` int(11) DEFAULT NULL,
-`p5` int(11) DEFAULT NULL,
-`team_id` varchar(30) DEFAULT NULL
-
-
-matches
+**`augury.groups`**
 
 Feature | Type | Description
 ---|---|---
-`MTID` | int(11) | **Primary Key** The Match Time Id
+`GPMID` | int(11) | **Primary Key** Group Player Match ID
+`p1` | int(11) | PMID for player 1 of group GPMID
+`p2` | int(11) | PMID for player 2 of group GPMID
+`p3` | int(11) | PMID for player 3 of group GPMID
+`p4` | int(11) | PMID for player 4 of group GPMID
+`p5` | int(11) | PMID for player 5 of group GPMID
+`team_id` | varchar(30) | The HLTV.org Id of the team
+
+
+**`augury.matches`**
+
+Feature | Type | Description
+---|---|---
+`MTID` | int(11) | **Primary Key**  Match Time ID
 `match_id` | varchar(100) |
 `t1_GPMID` | int(11) |
 `t2_GPMID` | int(11) |
