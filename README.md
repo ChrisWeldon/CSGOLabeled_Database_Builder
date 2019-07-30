@@ -48,47 +48,47 @@ There are 4 tables: matches, matches_complete, groups, and players.
 
 
 CREATE TABLE `matches` (
-`MTID`            |int(11) NOT NULL,
-------------------|---------------
-`match_id`        |varchar(100) DEFAULT NULL,
-------------------|---------------
-`t1_GPMID`        |int(11) DEFAULT NULL,
-------------------|---------------
-`t2_GPMID`        |int(11) DEFAULT NULL,
-------------------|---------------
-`match_type`      |int(11) DEFAULT NULL,
-------------------|---------------
-`map_1`           |varchar(100) DEFAULT NULL,
-------------------|---------------
-`map_t1_win`      |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`map_2`           |varchar(20) DEFAULT NULL,
-------------------|---------------
-`map_t2_win`      |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`map_3`           |varchar(20) DEFAULT NULL,
-------------------|---------------
-`map_t3_win`      |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`map_4`           |varchar(20) DEFAULT NULL,
-------------------|---------------
-`map_t4_win`      |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`map_5`           |varchar(20) DEFAULT NULL,
-------------------|---------------
-`map_t5_win`      |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`t1_score`        |int(11) DEFAULT NULL,
-------------------|---------------
-`t2_score`        |int(11) DEFAULT NULL,
-------------------|---------------
-`t1_win`          |tinyint(1) DEFAULT NULL,
-------------------|---------------
-`date_start`      |datetime DEFAULT NULL,
-------------------|---------------
-`date_delay`      |datetime DEFAULT NULL,
-------------------|---------------
-`date_collected`  |date DEFAULT NULL
+`MTID`            | int(11) NOT NULL,
+---|---
+`match_id`        | varchar(100) DEFAULT NULL,
+---|---
+`t1_GPMID`        | int(11) DEFAULT NULL,
+---|---
+`t2_GPMID`        | int(11) DEFAULT NULL,
+---|---
+`match_type`      | int(11) DEFAULT NULL,
+---|---
+`map_1`           | varchar(100) DEFAULT NULL,
+---|---
+`map_t1_win`      | tinyint(1) DEFAULT NULL,
+---|---
+`map_2`           | varchar(20) DEFAULT NULL,
+---|---
+`map_t2_win`      | tinyint(1) DEFAULT NULL,
+---|---
+`map_3`           | varchar(20) DEFAULT NULL,
+---|---
+`map_t3_win`      | tinyint(1) DEFAULT NULL,
+---|---
+`map_4`           | varchar(20) DEFAULT NULL,
+---|---
+`map_t4_win`      | tinyint(1) DEFAULT NULL,
+---|---
+`map_5`           | varchar(20) DEFAULT NULL,
+---|---
+`map_t5_win`      | tinyint(1) DEFAULT NULL,
+---|---
+`t1_score`        | int(11) DEFAULT NULL,
+---|---
+`t2_score`        | int(11) DEFAULT NULL,
+---|---
+`t1_win`          | tinyint(1) DEFAULT NULL,
+---|---
+`date_start` | datetime DEFAULT NULL,
+---|---
+`date_delay` | datetime DEFAULT NULL,
+---|---
+`date_collected`|date DEFAULT NULL
 
 
 CREATE TABLE `matches_complete`
