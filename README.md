@@ -50,8 +50,13 @@ There are 4 tables: matches, matches_complete, groups, and players.
 matches
 
 Feature | Type | Description
+---|---|---
 `MTID` | int(11) | **Primary Key** The Match Time Id
+---|---|---
 `match_id` | varchar(100) |
+
+
+
 `t1_GPMID` | int(11) |
 `t2_GPMID` | int(11) |
 `match_type` | int(11) |
