@@ -47,7 +47,8 @@ There are 4 tables: matches, matches_complete, groups, and players.
 `team_id` varchar(30) DEFAULT NULL
 
 
-CREATE TABLE `matches` (
+matches
+
 `MTID` | int(11)
 ---|---
 `match_id` | varchar(100)
