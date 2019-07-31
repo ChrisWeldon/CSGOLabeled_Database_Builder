@@ -1,6 +1,6 @@
 from datetime import datetime
 from colorama import Fore, Back, Style
-import inspect
+import inspect, json
 
 class Logger:
     def __init__(self, name=None, dir_rel='../logs/'):
