@@ -4,6 +4,10 @@ import inspect
 
 class Logger:
     def __init__(self, name=None, dir_rel='../logs/'):
+        with open('config.json', 'r') as json_file:
+            text = json_file.read()
+            json_data = json.loads(text)
+            self.config = json_data
         self.dir_rel = dir_rel
         self.name = name
         self.logfile = "dateless.txt"
@@ -68,11 +72,18 @@ class Logger:
         pass
 
     def writeToLog(self, statement, now=None):
-        with open(self.logfile, "a") as f:
-            if now:
-                f.write("[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  (" + self.name +") " + statement + "\n")
-            else:
-                f.write("\t" + statement + "\n")
+        if self.config["dev"] != "True":
+            with open(self.config["path"] + self.logfile, "a") as f:
+                if now:
+                    f.write("[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  (" + self.name +") " + statement + "\n")
+                else:
+                    f.write("\t" + statement + "\n")
+        else:
+            with open(self.logfile, "a") as f:
+                if now:
+                    f.write("[" + now.strftime("%Y-%m-%d %H:%M:%S")+ "]:  (" + self.name +") " + statement + "\n")
+                else:
+                    f.write("\t" + statement + "\n")
 
 if __name__ == "__main__":
     li = Logger()
