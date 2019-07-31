@@ -45,7 +45,7 @@ class Logger:
     def loglist(self, list, type='default', style='default'):
         curframe = inspect.currentframe()
         calframe = inspect.getouterframes(curframe, 2)
-        caller = calframe[-1][1]
+        caller = calframe[-1][1].split('/')[-1]
 
         if type == 'default':
             log_style = ""
