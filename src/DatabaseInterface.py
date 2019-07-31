@@ -16,7 +16,7 @@ li = Logger(name="DBI")
 
 class DatabaseInterface:
     def __init__(self):
-        with open('config.json', 'r') as json_file:
+        with open('./config.json', 'r') as json_file:
             text = json_file.read()
             json_data = json.loads(text)
             self.config = json_data
