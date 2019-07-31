@@ -154,6 +154,7 @@ class DatabaseInterface:
         query = ("SELECT MTID, match_id, date_start FROM matches WHERE DATE_ADD(NOW(), INTERVAL " + str(self.check_time_hours)+ " HOUR) >= date_start")
         cursor.execute(query)
         for row in cursor.fetchall():
+            cursor = self.cnx.cursor() #Temporary fix to the cursor dropping bug
             mtid = row[0]
             match_id = row[1]
             date_start = row[2]
@@ -161,6 +162,7 @@ class DatabaseInterface:
             #li.log(str(status_match) + " -  "+ str(match_id)+ " - "+ str(date_start))
             if status_match == "MO": #match over
                 #collect results
+                li.log("Match: " + match_id.split('/')[2] + " MO - copying datapoint to matches_complete", type="attempt")
                 copy = ("INSERT INTO matches_complete(MTID, match_id, t1_GPMID, t2_GPMID, match_type, date_start, date_collected) SELECT MTID, match_id, t1_GPMID, t2_GPMID, match_type, date_start, date_collected from matches WHERE MTID='" + str(mtid) + "';")
                 cursor.execute(copy)
                 self.cnx.commit()
@@ -311,10 +313,16 @@ class DatabaseInterface:
                     cursor.execute(add_results, add_results_data)
                     self.cnx.commit()
                 except Exception as err:
+                    cursor = self.cnx.cursor() # creating new cursor because of prior fails
+                    undo_match_complete = ("DELETE FROM matches_complete WHERE MTID = " + str(mtid) + ";")
+                    cursor.execute(undo_match_complete)
+                    self.cnx.commit()
                     raise DatabaseInterfaceCommitException(err)
-                remove_match = ("DELETE FROM matches WHERE MTID = " + str(mtid) + ";")
-                cursor.execute(remove_match)
-                self.cnx.commit()
+                else:
+                    li.log("Writing full point to matches_complete complete", type="success")
+                    remove_match = ("DELETE FROM matches WHERE MTID = " + str(mtid) + ";")
+                    cursor.execute(remove_match)
+                    self.cnx.commit()
             elif status_match =="LI": #live
                 #leave it be
                 pass
