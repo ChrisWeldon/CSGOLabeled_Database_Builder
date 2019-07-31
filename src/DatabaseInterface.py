@@ -2,7 +2,7 @@ import mysql.connector
 import datetime
 from Exceptions import *
 from Scraper import *
-import sys
+import sys, json
 from Logger import Logger
 """
 Rebuilt version of databaseInteractor
@@ -11,17 +11,23 @@ This class is specific to reading the augury database.
 
 
 """
+
 li = Logger(name="DBI")
 
 class DatabaseInterface:
     def __init__(self):
+        with open('config.json', 'r') as json_file:
+            text = json_file.read()
+            json_data = json.loads(text)
+            self.config = json_data
         self.check_time_hours = 1
+        self.cnx = mysql.connector.connect(user=self.config["database"]["user"], password=self.config["database"]["password"],
+                                      host=self.config["database"]["host"],
+                                      database= (self.config["database"]["dev_database_name"] if self.config["dev"]=="True" else self.config["database"]["database_name"]))
         li.log("DatabaseInterface Initialized")
-        self.cnx = mysql.connector.connect(user='chris', password='Chris)98',
-                                      host='beybladematch.com',
-                                      database='augury')
 
     def __del__(self):
+        li.log('DatabaseInterface instance is getting closed')
         self.cnx.close()
 
 
@@ -541,4 +547,4 @@ class DatabaseInterface:
         return id
 
 if __name__ == "__main__":
-    di = DatabaseInterface(logger=Logger(name="TestDBI", caller="DatabaseInterfaceMain"))
+    di = DatabaseInterface()

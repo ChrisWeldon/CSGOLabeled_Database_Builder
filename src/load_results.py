@@ -35,7 +35,7 @@ Match type:
 #cronned for every 5 minutes or so
 #team_lineup = ['695/allu', '4076/Aerial', '7248/xseveN', '9816blah/Aleksib', '11916/sergej']
 
-schedule_time = 10
+schedule_time = 30
 s = sched.scheduler(time.time, time.sleep)
 li = Logger(name="load_results")
 di = DatabaseInterface()
