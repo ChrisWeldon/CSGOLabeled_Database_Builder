@@ -1,6 +1,10 @@
 # CS:GO Labeled Match Database
 
-Code written by Chris Evans can be found here at (https://github.com/ChrisWeldon/CSGOLabeled_Database_Builder)
+*Database is in production, release will become available upon 700 data points. View production logs [here](http://csgo.chriswevans.com/)
+I you would like to have an early release just email me at cwevans612@gmail.com*
+
+
+All code written by Chris Evans and can be found here at (https://github.com/ChrisWeldon/CSGOLabeled_Database_Builder)
 Webpage to view the log files can be found here: (http://csgo.chriswevans.com/) and code for the webpage here (https://github.com/ChrisWeldon/Augury_Webapp_Client)
 All the data is hosted on a mysql server at (http://pma.beybladematch.com), behind a login. Email me if you want one. (The data exists on a server that I use for multiple webpages I've build, forgive the name.)
 
@@ -36,8 +40,7 @@ There are 4 tables: matches, matches_complete, groups, and players.
  - 2 groups for every row in matches_complete
  - 5 players for every row in groups
 
- ### Schema
-
+### Schema
 
 **`augury.matches`**
 
@@ -155,3 +158,30 @@ Feature | Type | Description
 `clutch_1v4_w` | int(11) | Total wins alone agains 4 players
 `clutch_1v5_w` | int(11) | Total wins alone agains 5 players
 `clutch_1v1_l` | int(11) | Total losses alone agains 1 players
+
+## Data Collection
+
+All the data collection was written in Python with BeautifulSoup4 and Mysql-connector. Had I been smart, I would have used Django and used their models and admin library but I'm not so I didn't.
+
+There are 3 main Modules :
+ - DatabaseInterface.py: The class solely interacts with MySQL server sitting on beybladematch.com. It is responsible from the addition and deletion of data points, as well as reading data.
+ - Scraper.py: Which is does all the data scraping off of HLTV.org.
+ - Logger.py: Which is a custom logger class that prints things all fancy like as well as writes to readable .log files for debugging.
+
+
+There are two processes:
+ - load_upcoming.py: Which is responsible for finding all the matches that happen soon, scraping the Features, and saving them into a mysql database
+ - load_results.py: Which is responsible for getting the labels and updating the database after a match has finished.
+
+ Wrap those two main process up in a systemd service and bob's your uncle.
+
+
+## Error Handling
+
+huge part of this is making sure that the database is always collecting data. To do that I need to meticulously error handling and mitigate any process breaking bug.
+
+The first thing was writing a nice Logger.py class and hosting all the log files on a webpage http://csgo.chriswevans.com so I can always tap in and see whats going on with the services.
+
+The next thing was wrapping unanticipated errors with more generic custom errors as they bubble up. For example: If for some reason the data for a player cannot be scraped, then it must be handled at the match collection level where the datapoint can be completely purged. The main processes are only designed to handle anticipated errors like PlayerDataUnscrapableException. If this exception happens then we know exactly what to do, purge the data and try again in 20 minutes when more info may come to light on the datasource.
+
+I can never anticipate every error, but I can make sure that it handled in a wrapper class and log the error to be fixed later.
