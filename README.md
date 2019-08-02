@@ -1,11 +1,11 @@
 # CS:GO Labeled Match Database
 
-*Database is in production, release will become available upon 700 data points. View production logs [here](http://csgo.chriswevans.com/)
-I you would like to have an early release just email me at cwevans612@gmail.com*
+*Database is in production, release will become available upon 700 data points. View production logs [here](http://csgo.chriswevans.com/).
+If you would like to have an early release just email me at cwevans612@gmail.com*
 
 
-All code written by Chris Evans and can be found here at (https://github.com/ChrisWeldon/CSGOLabeled_Database_Builder)
-Webpage to view the log files can be found here: (http://csgo.chriswevans.com/) and code for the webpage here (https://github.com/ChrisWeldon/Augury_Webapp_Client)
+All code written by Chris Evans and can be found here at (https://github.com/ChrisWeldon/CSGOLabeled_Database_Builder).
+Webpage to view the log files can be found here: (http://csgo.chriswevans.com/) and code for the webpage here (https://github.com/ChrisWeldon/Augury_Webapp_Client).
 All the data is hosted on a mysql server at (http://pma.beybladematch.com), behind a login. Email me if you want one. (The data exists on a server that I use for multiple webpages I've build, forgive the name.)
 
 This code is an attempt to create the first labeled dataset for CS:GO professional match prediction.
