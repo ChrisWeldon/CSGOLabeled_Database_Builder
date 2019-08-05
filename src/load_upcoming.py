@@ -35,7 +35,7 @@ schedule_time = 30
 s = sched.scheduler(time.time, time.sleep)
 li = Logger(name="main_upcm")
 di = DatabaseInterface()
-
+li.log("load_upcoming.py Initialized")
 def load_upcoming():
     di = DatabaseInterface()
     try:

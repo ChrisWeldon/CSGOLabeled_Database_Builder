@@ -24,10 +24,10 @@ class DatabaseInterface:
         self.cnx = mysql.connector.connect(user=self.config["database"]["user"], password=self.config["database"]["password"],
                                       host=self.config["database"]["host"],
                                       database= (self.config["database"]["dev_database_name"] if self.config["dev"]=="True" else self.config["database"]["database_name"]))
-        li.log("DatabaseInterface Initialized")
+        #li.log("DatabaseInterface Initialized")
 
     def __del__(self):
-        li.log('DatabaseInterface instance is getting closed')
+        #li.log('DatabaseInterface instance is getting closed')
         self.cnx.close()
 
 
@@ -406,7 +406,7 @@ class DatabaseInterface:
             try:
                 pmids_lineup.append(self.writePlayer(p))
             except WritePlayerException as err:
-                li.log("WRITE PLAYER EXCEPTION, UNABLE TO TEST THIS CODE, MONITOR TO SEE IF IT WORKS!!")
+                li.log("WRITE PLAYER EXCEPTION, UNABLE TO TEST THIS CODE, MONITOR TO SEE IF IT WORKS!!", type='attempt')
                 while pmids_lineup:
                     self.purgePlayer(pmids_lineup.pop(-1))
                 raise WriteGroupException("WriteGroupException at: " + str(p))

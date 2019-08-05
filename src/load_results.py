@@ -39,7 +39,7 @@ schedule_time = 30
 s = sched.scheduler(time.time, time.sleep)
 li = Logger(name="load_results")
 di = DatabaseInterface()
-
+li.log("load_results.py Initialized")
 def load_results():
     di = DatabaseInterface()
     try:
