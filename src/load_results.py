@@ -41,12 +41,13 @@ li = Logger(name="load_results")
 di = DatabaseInterface()
 
 def load_results():
+    di = DatabaseInterface()
     try:
         di.checkWriteResults()
     except Exception as err:
         li.log(traceback.format_exc(), type="traceback")
         li.log(str(err.__class__.__name__)+ ": Failed checkWriteResults", type="error")
-
+    del di
     s.enter(schedule_time, 1, load_results)
 
 if __name__ == "__main__":

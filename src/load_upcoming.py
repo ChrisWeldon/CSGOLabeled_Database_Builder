@@ -37,6 +37,7 @@ li = Logger(name="main_upcm")
 di = DatabaseInterface()
 
 def load_upcoming():
+    di = DatabaseInterface()
     try:
         up_matches  = getUpcomingMatches(20)
         for m in up_matches:
@@ -57,6 +58,7 @@ def load_upcoming():
     except Exception as err:
         li.log(traceback.format_exc(), type='traceback')
         li.log(type(err).__name__, type='error')
+    del di
     s.enter(schedule_time, 1, load_upcoming)
 
 if __name__ == "__main__":
