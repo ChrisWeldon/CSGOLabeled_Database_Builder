@@ -16,6 +16,14 @@ class Logger:
         else:
             self.logname_w_style = ""
 
+    def dump_meta(self, meta):
+        if self.config["dev"] != "True":
+            with open("/usr/bin/CSGOLabeled_Database_Builder/logs/metadata.json", "w") as f:
+                json.dump(meta, f)
+        else:
+            with open(self.dir_rel + "metadata.json", "w") as f:
+                json.dump(meta, f)
+        pass
     def log(self, statement, type='default', style='default'):
         curframe = inspect.currentframe()
         calframe = inspect.getouterframes(curframe, 2)

@@ -31,9 +31,20 @@ class DatabaseInterface:
         self.cnx.close()
 
 
-    # SELECT name, datum
-    # FROM tasks
-    # WHERE datum >= NOW()
+    def getMetaData(self):
+        cursor = self.cnx.cursor()
+        ret_obj = {}
+        query_count = ("SELECT count(*) FROM %s WHERE 1")
+        cursor.execute(query_count % 'matches_complete')
+        ret_obj['matches_complete_count'] = int(cursor.fetchall()[0][0])
+        cursor.execute(query_count % 'matches')
+        ret_obj['matches_count'] = int(cursor.fetchall()[0][0])
+        cursor.execute(query_count % 'groups')
+        ret_obj['groups_count'] = int(cursor.fetchall()[0][0])
+        cursor.execute(query_count % 'players')
+        ret_obj['players_count'] = int(cursor.fetchall()[0][0])
+        ret_obj['collected'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return ret_obj
     def checkUpcomingMatchInDatabase(self, match_id):
         cursor = self.cnx.cursor()
         query_match = ("SELECT match_id, date_start FROM matches WHERE match_id = '"+ match_id +"';")
